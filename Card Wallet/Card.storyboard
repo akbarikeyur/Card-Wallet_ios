@@ -1,0 +1,1248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="KHI-tw-m1B">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Add CardVC-->
+        <scene sceneID="bH0-AJ-6Pa">
+            <objects>
+                <viewController storyboardIdentifier="AddCardVC" id="Wkk-X7-Kao" customClass="AddCardVC" customModule="Card_Wallet" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GOp-2m-8MQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="Nmi-N8-8Yv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dVz-nx-OaG">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="750"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aKB-iW-JxB">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Card" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YTg-I3-baI" customClass="Label" customModule="Card_Wallet" customModuleProvider="target">
+                                        <rect key="frame" x="15" y="42.5" width="99" height="25.5"/>
+                                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="22"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="fontTypeAdapter" value="hb"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                <real key="value" value="22"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="GTl-qK-vne"/>
+                                    <constraint firstAttribute="bottom" secondItem="YTg-I3-baI" secondAttribute="bottom" constant="12" id="KXK-PL-wct"/>
+                                    <constraint firstItem="YTg-I3-baI" firstAttribute="leading" secondItem="aKB-iW-JxB" secondAttribute="leading" constant="15" id="jAq-3f-mXB"/>
+                                </constraints>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6fS-De-rBZ">
+                                <rect key="frame" x="0.0" y="80" width="320" height="670"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PdF-z4-zpU">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="670"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jxf-je-xu5">
+                                                <rect key="frame" x="0.0" y="10" width="320" height="100"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Dh-K2-mdb">
+                                                        <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Company Logo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iHG-yq-HrP" customClass="Label" customModule="Card_Wallet" customModuleProvider="target">
+                                                                <rect key="frame" x="15" y="0.0" width="305" height="17.5"/>
+                                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                                                        <integer key="value" value="1"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="fontTypeAdapter" value="hr"/>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                                        <real key="value" value="14"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </label>
+                                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MOZ-yb-DLO" customClass="Button" customModule="Card_Wallet" customModuleProvider="target">
+                                                                <rect key="frame" x="125" y="27.5" width="70" height="70"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="70" id="BgB-kG-asQ"/>
+                                                                    <constraint firstAttribute="width" constant="70" id="XV9-xa-hr7"/>
+                                                                </constraints>
+                                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <state key="normal" backgroundImage="add_logo"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="10"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderColorTypeAdapter">
+                                                                        <integer key="value" value="1"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                        <real key="value" value="1"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="clickToSelectLogo:" destination="Wkk-X7-Kao" eventType="touchUpInside" id="UzU-wZ-xYP"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="iHG-yq-HrP" secondAttribute="trailing" id="X0u-kr-qjl"/>
+                                                            <constraint firstItem="MOZ-yb-DLO" firstAttribute="top" secondItem="iHG-yq-HrP" secondAttribute="bottom" constant="10" id="eYa-SO-Zpt"/>
+                                                            <constraint firstItem="MOZ-yb-DLO" firstAttribute="centerX" secondItem="1Dh-K2-mdb" secondAttribute="centerX" id="l0O-do-GiI"/>
+                                                            <constraint firstItem="iHG-yq-HrP" firstAttribute="leading" secondItem="1Dh-K2-mdb" secondAttribute="leading" constant="15" id="mUl-nS-Qam"/>
+                                                            <constraint firstItem="iHG-yq-HrP" firstAttribute="top" secondItem="1Dh-K2-mdb" secondAttribute="top" id="tLN-IP-4HJ"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="1Dh-K2-mdb" secondAttribute="bottom" id="OhN-4Z-WCv"/>
+                                                    <constraint firstItem="1Dh-K2-mdb" firstAttribute="leading" secondItem="jxf-je-xu5" secondAttribute="leading" id="dom-i2-tlh"/>
+                                                    <constraint firstItem="1Dh-K2-mdb" firstAttribute="top" secondItem="jxf-je-xu5" secondAttribute="top" id="ga4-9r-n0s"/>
+                                                    <constraint firstAttribute="height" constant="100" id="nUj-QF-yZ6"/>
+                                                    <constraint firstAttribute="trailing" secondItem="1Dh-K2-mdb" secondAttribute="trailing" id="utR-ev-IuM"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y2L-ue-tjP">
+                                                <rect key="frame" x="0.0" y="122" width="320" height="60"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Company Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UEW-NL-NiQ" customClass="Label" customModule="Card_Wallet" customModuleProvider="target">
+                                                        <rect key="frame" x="15" y="0.0" width="108.5" height="17.5"/>
+                                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                                                <integer key="value" value="1"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="fontTypeAdapter" value="hr"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                                <real key="value" value="14"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pHj-v7-lBd" customClass="TextField" customModule="Card_Wallet" customModuleProvider="target">
+                                                        <rect key="frame" x="15" y="17.5" width="290" height="42.5"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" textContentType="name"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                                                <integer key="value" value="1"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="fontTypeAdapter" value="hr"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                                <real key="value" value="16"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sRe-5b-OJB" customClass="ImageView" customModule="Card_Wallet" customModuleProvider="target">
+                                                        <rect key="frame" x="15" y="59" width="290" height="1"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="1" id="ref-Kn-ElJ"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="backgroundColorTypeAdapter">
+                                                                <integer key="value" value="3"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="pHj-v7-lBd" secondAttribute="bottom" id="CFh-SO-EAN"/>
+                                                    <constraint firstAttribute="height" constant="60" id="CUh-Zp-DfC"/>
+                                                    <constraint firstItem="UEW-NL-NiQ" firstAttribute="leading" secondItem="Y2L-ue-tjP" secondAttribute="leading" constant="15" id="E3j-K7-4kp"/>
+                                                    <constraint firstItem="sRe-5b-OJB" firstAttribute="leading" secondItem="pHj-v7-lBd" secondAttribute="leading" id="Ee5-ed-hwT"/>
+                                                    <constraint firstItem="UEW-NL-NiQ" firstAttribute="top" secondItem="Y2L-ue-tjP" secondAttribute="top" id="Udi-7s-1qK"/>
+                                                    <constraint firstAttribute="bottom" secondItem="sRe-5b-OJB" secondAttribute="bottom" id="VTa-rf-cij"/>
+                                                    <constraint firstItem="pHj-v7-lBd" firstAttribute="top" secondItem="UEW-NL-NiQ" secondAttribute="bottom" id="ecX-1Y-AtC"/>
+                                                    <constraint firstAttribute="trailing" secondItem="pHj-v7-lBd" secondAttribute="trailing" constant="15" id="gJe-uh-mJw"/>
+                                                    <constraint firstItem="pHj-v7-lBd" firstAttribute="leading" secondItem="Y2L-ue-tjP" secondAttribute="leading" constant="15" id="jcF-2p-Jgc"/>
+                                                    <constraint firstItem="sRe-5b-OJB" firstAttribute="trailing" secondItem="pHj-v7-lBd" secondAttribute="trailing" id="xoy-Qs-UYs"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kHv-ii-Zac">
+                                                <rect key="frame" x="0.0" y="197" width="320" height="60"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lTG-LK-6fd" customClass="Label" customModule="Card_Wallet" customModuleProvider="target">
+                                                        <rect key="frame" x="15" y="0.0" width="61" height="17.5"/>
+                                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                                                <integer key="value" value="1"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="fontTypeAdapter" value="hr"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                                <real key="value" value="14"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </label>
+                                                    <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XFW-xo-szS" customClass="TextField" customModule="Card_Wallet" customModuleProvider="target">
+                                                        <rect key="frame" x="15" y="17.5" width="290" height="42.5"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                                                <integer key="value" value="1"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="fontTypeAdapter" value="hr"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                                <real key="value" value="16"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UYI-hY-0kE">
+                                                        <rect key="frame" x="15" y="17.5" width="290" height="42.5"/>
+                                                        <connections>
+                                                            <action selector="clickToSelectCategory:" destination="Wkk-X7-Kao" eventType="touchUpInside" id="69M-SG-ZSK"/>
+                                                        </connections>
+                                                    </button>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UXs-xy-3HW" customClass="ImageView" customModule="Card_Wallet" customModuleProvider="target">
+                                                        <rect key="frame" x="15" y="59" width="290" height="1"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="1" id="amK-xJ-PvA"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="backgroundColorTypeAdapter">
+                                                                <integer key="value" value="3"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="UXs-xy-3HW" firstAttribute="trailing" secondItem="XFW-xo-szS" secondAttribute="trailing" id="1eD-za-ilQ"/>
+                                                    <constraint firstItem="UYI-hY-0kE" firstAttribute="top" secondItem="XFW-xo-szS" secondAttribute="top" id="3Df-6k-EQO"/>
+                                                    <constraint firstItem="UYI-hY-0kE" firstAttribute="bottom" secondItem="XFW-xo-szS" secondAttribute="bottom" id="5vj-1c-8Ja"/>
+                                                    <constraint firstItem="UYI-hY-0kE" firstAttribute="leading" secondItem="XFW-xo-szS" secondAttribute="leading" id="6ZM-7N-ppS"/>
+                                                    <constraint firstAttribute="bottom" secondItem="XFW-xo-szS" secondAttribute="bottom" id="A3l-oa-0O4"/>
+                                                    <constraint firstAttribute="height" constant="60" id="P6A-GP-DYv"/>
+                                                    <constraint firstItem="lTG-LK-6fd" firstAttribute="leading" secondItem="kHv-ii-Zac" secondAttribute="leading" constant="15" id="UQM-Om-PQD"/>
+                                                    <constraint firstItem="XFW-xo-szS" firstAttribute="leading" secondItem="kHv-ii-Zac" secondAttribute="leading" constant="15" id="dyz-D3-Rzf"/>
+                                                    <constraint firstItem="lTG-LK-6fd" firstAttribute="top" secondItem="kHv-ii-Zac" secondAttribute="top" id="hP8-Uf-Xbn"/>
+                                                    <constraint firstItem="XFW-xo-szS" firstAttribute="top" secondItem="lTG-LK-6fd" secondAttribute="bottom" id="hqK-jc-4qq"/>
+                                                    <constraint firstItem="UXs-xy-3HW" firstAttribute="leading" secondItem="XFW-xo-szS" secondAttribute="leading" id="iPa-TS-X4n"/>
+                                                    <constraint firstAttribute="bottom" secondItem="UXs-xy-3HW" secondAttribute="bottom" id="kLJ-n1-ACg"/>
+                                                    <constraint firstAttribute="trailing" secondItem="XFW-xo-szS" secondAttribute="trailing" constant="15" id="kdl-bO-tK3"/>
+                                                    <constraint firstItem="UYI-hY-0kE" firstAttribute="trailing" secondItem="XFW-xo-szS" secondAttribute="trailing" id="oxt-LW-CgX"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BsB-wB-9Yj">
+                                                <rect key="frame" x="0.0" y="272" width="320" height="60"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zvZ-d8-zNX" customClass="Label" customModule="Card_Wallet" customModuleProvider="target">
+                                                        <rect key="frame" x="15" y="0.0" width="40.5" height="17.5"/>
+                                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                                                <integer key="value" value="1"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="fontTypeAdapter" value="hr"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                                <real key="value" value="14"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mm3-79-XlE" customClass="TextField" customModule="Card_Wallet" customModuleProvider="target">
+                                                        <rect key="frame" x="15" y="17.5" width="290" height="42.5"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="next" textContentType="name"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                                                <integer key="value" value="1"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="fontTypeAdapter" value="hr"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                                <real key="value" value="16"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="B9Q-rD-IT1" customClass="ImageView" customModule="Card_Wallet" customModuleProvider="target">
+                                                        <rect key="frame" x="15" y="59" width="290" height="1"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="1" id="crU-EL-0Il"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="backgroundColorTypeAdapter">
+                                                                <integer key="value" value="3"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="mm3-79-XlE" secondAttribute="trailing" constant="15" id="0zg-DX-mJs"/>
+                                                    <constraint firstAttribute="height" constant="60" id="78P-DE-Eqv"/>
+                                                    <constraint firstItem="zvZ-d8-zNX" firstAttribute="leading" secondItem="BsB-wB-9Yj" secondAttribute="leading" constant="15" id="97L-m9-2H3"/>
+                                                    <constraint firstItem="B9Q-rD-IT1" firstAttribute="trailing" secondItem="mm3-79-XlE" secondAttribute="trailing" id="EQK-Sa-2PG"/>
+                                                    <constraint firstItem="mm3-79-XlE" firstAttribute="leading" secondItem="BsB-wB-9Yj" secondAttribute="leading" constant="15" id="IWy-DK-zBJ"/>
+                                                    <constraint firstItem="zvZ-d8-zNX" firstAttribute="top" secondItem="BsB-wB-9Yj" secondAttribute="top" id="J6f-4b-gLY"/>
+                                                    <constraint firstAttribute="bottom" secondItem="B9Q-rD-IT1" secondAttribute="bottom" id="MPa-AQ-q3T"/>
+                                                    <constraint firstItem="B9Q-rD-IT1" firstAttribute="leading" secondItem="mm3-79-XlE" secondAttribute="leading" id="bh6-1x-Cqh"/>
+                                                    <constraint firstItem="mm3-79-XlE" firstAttribute="top" secondItem="zvZ-d8-zNX" secondAttribute="bottom" id="lAu-HT-Dh6"/>
+                                                    <constraint firstAttribute="bottom" secondItem="mm3-79-XlE" secondAttribute="bottom" id="tOE-UR-cYh"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D2A-i9-9fz">
+                                                <rect key="frame" x="0.0" y="347" width="320" height="60"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xu9-CR-fDk" customClass="Label" customModule="Card_Wallet" customModuleProvider="target">
+                                                        <rect key="frame" x="15" y="0.0" width="52" height="17.5"/>
+                                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                                                <integer key="value" value="1"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="fontTypeAdapter" value="hr"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                                <real key="value" value="14"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6Rk-02-5eI" customClass="TextField" customModule="Card_Wallet" customModuleProvider="target">
+                                                        <rect key="frame" x="15" y="17.5" width="290" height="42.5"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                                        <textInputTraits key="textInputTraits" keyboardType="phonePad" textContentType="tel"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                                                <integer key="value" value="1"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="fontTypeAdapter" value="hr"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                                <real key="value" value="16"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="G02-C1-ecH" customClass="ImageView" customModule="Card_Wallet" customModuleProvider="target">
+                                                        <rect key="frame" x="15" y="59" width="290" height="1"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="1" id="Y7T-5L-F8E"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="backgroundColorTypeAdapter">
+                                                                <integer key="value" value="3"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="6Rk-02-5eI" firstAttribute="top" secondItem="xu9-CR-fDk" secondAttribute="bottom" id="683-as-acz"/>
+                                                    <constraint firstItem="6Rk-02-5eI" firstAttribute="leading" secondItem="D2A-i9-9fz" secondAttribute="leading" constant="15" id="83B-Ma-F04"/>
+                                                    <constraint firstItem="G02-C1-ecH" firstAttribute="trailing" secondItem="6Rk-02-5eI" secondAttribute="trailing" id="8ua-9D-FIS"/>
+                                                    <constraint firstAttribute="bottom" secondItem="6Rk-02-5eI" secondAttribute="bottom" id="AFT-Zs-oDB"/>
+                                                    <constraint firstItem="xu9-CR-fDk" firstAttribute="top" secondItem="D2A-i9-9fz" secondAttribute="top" id="LdN-lS-GjG"/>
+                                                    <constraint firstItem="xu9-CR-fDk" firstAttribute="leading" secondItem="D2A-i9-9fz" secondAttribute="leading" constant="15" id="Tif-GW-bGL"/>
+                                                    <constraint firstAttribute="height" constant="60" id="UTe-8G-3ZY"/>
+                                                    <constraint firstAttribute="bottom" secondItem="G02-C1-ecH" secondAttribute="bottom" id="eHd-Oh-eg1"/>
+                                                    <constraint firstAttribute="trailing" secondItem="6Rk-02-5eI" secondAttribute="trailing" constant="15" id="hnl-fu-jqT"/>
+                                                    <constraint firstItem="G02-C1-ecH" firstAttribute="leading" secondItem="6Rk-02-5eI" secondAttribute="leading" id="oks-4U-4z5"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q80-j6-Q4M">
+                                                <rect key="frame" x="0.0" y="422" width="320" height="60"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FWL-wa-uQT" customClass="Label" customModule="Card_Wallet" customModuleProvider="target">
+                                                        <rect key="frame" x="15" y="0.0" width="38" height="17.5"/>
+                                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                                                <integer key="value" value="1"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="fontTypeAdapter" value="hr"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                                <real key="value" value="14"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pzZ-0R-GbY" customClass="TextField" customModule="Card_Wallet" customModuleProvider="target">
+                                                        <rect key="frame" x="15" y="17.5" width="290" height="42.5"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                                                <integer key="value" value="1"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="fontTypeAdapter" value="hr"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                                <real key="value" value="16"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3Vx-ng-PUd" customClass="ImageView" customModule="Card_Wallet" customModuleProvider="target">
+                                                        <rect key="frame" x="15" y="59" width="290" height="1"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="1" id="Rvd-3D-2SO"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="backgroundColorTypeAdapter">
+                                                                <integer key="value" value="3"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="3Vx-ng-PUd" firstAttribute="trailing" secondItem="pzZ-0R-GbY" secondAttribute="trailing" id="EYF-Af-cJo"/>
+                                                    <constraint firstItem="FWL-wa-uQT" firstAttribute="top" secondItem="Q80-j6-Q4M" secondAttribute="top" id="J80-xV-q8c"/>
+                                                    <constraint firstItem="3Vx-ng-PUd" firstAttribute="leading" secondItem="pzZ-0R-GbY" secondAttribute="leading" id="Kbv-TO-67n"/>
+                                                    <constraint firstAttribute="bottom" secondItem="pzZ-0R-GbY" secondAttribute="bottom" id="Wp6-IA-vpc"/>
+                                                    <constraint firstAttribute="bottom" secondItem="3Vx-ng-PUd" secondAttribute="bottom" id="fE6-l5-dKZ"/>
+                                                    <constraint firstItem="FWL-wa-uQT" firstAttribute="leading" secondItem="Q80-j6-Q4M" secondAttribute="leading" constant="15" id="jaG-Ln-s6W"/>
+                                                    <constraint firstItem="pzZ-0R-GbY" firstAttribute="leading" secondItem="Q80-j6-Q4M" secondAttribute="leading" constant="15" id="lDb-o7-0kY"/>
+                                                    <constraint firstAttribute="height" constant="60" id="moj-lR-5r5"/>
+                                                    <constraint firstAttribute="trailing" secondItem="pzZ-0R-GbY" secondAttribute="trailing" constant="15" id="vFt-8f-vAp"/>
+                                                    <constraint firstItem="pzZ-0R-GbY" firstAttribute="top" secondItem="FWL-wa-uQT" secondAttribute="bottom" id="xft-J8-Pj9"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Tp-gb-veV">
+                                                <rect key="frame" x="0.0" y="497" width="320" height="60"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9zt-Dc-TPr" customClass="Label" customModule="Card_Wallet" customModuleProvider="target">
+                                                        <rect key="frame" x="15" y="0.0" width="55.5" height="17.5"/>
+                                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                                                <integer key="value" value="1"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="fontTypeAdapter" value="hr"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                                <real key="value" value="14"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dka-6V-6u1" customClass="TextField" customModule="Card_Wallet" customModuleProvider="target">
+                                                        <rect key="frame" x="15" y="17.5" width="290" height="42.5"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                                        <textInputTraits key="textInputTraits" textContentType="location"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                                                <integer key="value" value="1"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="fontTypeAdapter" value="hr"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                                <real key="value" value="16"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RBi-El-dQM">
+                                                        <rect key="frame" x="305" y="17.5" width="0.0" height="42.5"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" id="fjI-cw-8wW"/>
+                                                        </constraints>
+                                                        <state key="normal" image="google_map"/>
+                                                        <connections>
+                                                            <action selector="clickToSelectAddress:" destination="Wkk-X7-Kao" eventType="touchUpInside" id="V23-zn-LlK"/>
+                                                        </connections>
+                                                    </button>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4rx-Wq-PJ3" customClass="ImageView" customModule="Card_Wallet" customModuleProvider="target">
+                                                        <rect key="frame" x="15" y="59" width="290" height="1"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="1" id="KJu-vH-cn3"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="backgroundColorTypeAdapter">
+                                                                <integer key="value" value="3"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="9zt-Dc-TPr" firstAttribute="top" secondItem="4Tp-gb-veV" secondAttribute="top" id="00R-d5-H5y"/>
+                                                    <constraint firstItem="RBi-El-dQM" firstAttribute="leading" secondItem="Dka-6V-6u1" secondAttribute="trailing" id="6BV-tW-qSw"/>
+                                                    <constraint firstItem="RBi-El-dQM" firstAttribute="top" secondItem="Dka-6V-6u1" secondAttribute="top" id="O2v-l8-0kA"/>
+                                                    <constraint firstAttribute="trailing" secondItem="RBi-El-dQM" secondAttribute="trailing" constant="15" id="PFf-y6-thI"/>
+                                                    <constraint firstItem="Dka-6V-6u1" firstAttribute="top" secondItem="9zt-Dc-TPr" secondAttribute="bottom" id="T3L-H6-Pxr"/>
+                                                    <constraint firstItem="4rx-Wq-PJ3" firstAttribute="leading" secondItem="Dka-6V-6u1" secondAttribute="leading" id="Y0b-WA-xN6"/>
+                                                    <constraint firstItem="4rx-Wq-PJ3" firstAttribute="trailing" secondItem="Dka-6V-6u1" secondAttribute="trailing" id="Yjw-Mo-bC6"/>
+                                                    <constraint firstAttribute="bottom" secondItem="4rx-Wq-PJ3" secondAttribute="bottom" id="b2a-4t-ZNe"/>
+                                                    <constraint firstItem="Dka-6V-6u1" firstAttribute="leading" secondItem="4Tp-gb-veV" secondAttribute="leading" constant="15" id="chT-Oq-LJG"/>
+                                                    <constraint firstAttribute="bottom" secondItem="Dka-6V-6u1" secondAttribute="bottom" id="g99-GW-xyc"/>
+                                                    <constraint firstItem="9zt-Dc-TPr" firstAttribute="leading" secondItem="4Tp-gb-veV" secondAttribute="leading" constant="15" id="gUc-e5-yCh"/>
+                                                    <constraint firstAttribute="height" constant="60" id="gri-4b-G9t"/>
+                                                    <constraint firstItem="RBi-El-dQM" firstAttribute="bottom" secondItem="Dka-6V-6u1" secondAttribute="bottom" id="tm5-8k-AlX"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="USZ-CX-4Z5">
+                                                <rect key="frame" x="0.0" y="587" width="320" height="60"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fxa-P4-hZQ" customClass="Button" customModule="Card_Wallet" customModuleProvider="target">
+                                                        <rect key="frame" x="17" y="7" width="130" height="46"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="130" id="Aiw-un-i97"/>
+                                                            <constraint firstAttribute="height" constant="46" id="Gly-1T-Q20"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Cancel"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="23"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                                                <integer key="value" value="1"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="fontTypeAdapter" value="hb"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                                <real key="value" value="18"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="gradientBackgroundTypeAdapter">
+                                                                <integer key="value" value="3"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="clickToCancel:" destination="Wkk-X7-Kao" eventType="touchUpInside" id="1ct-jF-DVe"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aF9-X1-umh" customClass="Button" customModule="Card_Wallet" customModuleProvider="target">
+                                                        <rect key="frame" x="172" y="7" width="130" height="46"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="130" id="VDe-ht-H9F"/>
+                                                            <constraint firstAttribute="height" constant="46" id="sHZ-Q3-XIY"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Next"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="23"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                                                <integer key="value" value="1"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="fontTypeAdapter" value="hb"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                                <real key="value" value="18"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="gradientBackgroundTypeAdapter">
+                                                                <integer key="value" value="2"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="clickToAddCard:" destination="Wkk-X7-Kao" eventType="touchUpInside" id="ztz-T5-4pQ"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="aF9-X1-umh" firstAttribute="centerX" secondItem="USZ-CX-4Z5" secondAttribute="centerX" constant="77" id="P6c-ZQ-mke"/>
+                                                    <constraint firstItem="aF9-X1-umh" firstAttribute="centerY" secondItem="USZ-CX-4Z5" secondAttribute="centerY" id="UAe-Cg-W4N"/>
+                                                    <constraint firstItem="aF9-X1-umh" firstAttribute="centerY" secondItem="Fxa-P4-hZQ" secondAttribute="centerY" id="ffO-TO-sso"/>
+                                                    <constraint firstAttribute="height" constant="60" id="kNG-7l-UfC"/>
+                                                    <constraint firstItem="aF9-X1-umh" firstAttribute="leading" secondItem="Fxa-P4-hZQ" secondAttribute="trailing" constant="25" id="xcJ-0P-FlT"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="kHv-ii-Zac" firstAttribute="top" secondItem="Y2L-ue-tjP" secondAttribute="bottom" constant="15" id="0Ic-Qu-wUg"/>
+                                            <constraint firstItem="Y2L-ue-tjP" firstAttribute="top" secondItem="jxf-je-xu5" secondAttribute="bottom" constant="12" id="1u2-GO-rCg"/>
+                                            <constraint firstAttribute="trailing" secondItem="jxf-je-xu5" secondAttribute="trailing" id="4aP-ff-ARf"/>
+                                            <constraint firstAttribute="trailing" secondItem="Y2L-ue-tjP" secondAttribute="trailing" id="9rn-GP-PE2"/>
+                                            <constraint firstItem="jxf-je-xu5" firstAttribute="top" secondItem="PdF-z4-zpU" secondAttribute="top" constant="10" id="9sE-R7-UKc"/>
+                                            <constraint firstItem="BsB-wB-9Yj" firstAttribute="leading" secondItem="PdF-z4-zpU" secondAttribute="leading" id="BIG-E7-vcf"/>
+                                            <constraint firstAttribute="bottom" secondItem="USZ-CX-4Z5" secondAttribute="bottom" constant="23" id="CIw-6T-gmI"/>
+                                            <constraint firstItem="USZ-CX-4Z5" firstAttribute="leading" secondItem="PdF-z4-zpU" secondAttribute="leading" id="DYF-7h-bId"/>
+                                            <constraint firstAttribute="trailing" secondItem="D2A-i9-9fz" secondAttribute="trailing" id="Drt-oJ-bAs"/>
+                                            <constraint firstAttribute="trailing" secondItem="kHv-ii-Zac" secondAttribute="trailing" id="MFg-XN-lkC"/>
+                                            <constraint firstItem="USZ-CX-4Z5" firstAttribute="top" secondItem="4Tp-gb-veV" secondAttribute="bottom" constant="30" id="OkW-X0-Ri4"/>
+                                            <constraint firstAttribute="trailing" secondItem="4Tp-gb-veV" secondAttribute="trailing" id="Teq-jk-HkR"/>
+                                            <constraint firstItem="jxf-je-xu5" firstAttribute="leading" secondItem="PdF-z4-zpU" secondAttribute="leading" id="US5-XY-HDo"/>
+                                            <constraint firstAttribute="trailing" secondItem="Q80-j6-Q4M" secondAttribute="trailing" id="Yri-Fq-GNe"/>
+                                            <constraint firstAttribute="trailing" secondItem="USZ-CX-4Z5" secondAttribute="trailing" id="eVD-o0-HP7"/>
+                                            <constraint firstItem="4Tp-gb-veV" firstAttribute="top" secondItem="Q80-j6-Q4M" secondAttribute="bottom" constant="15" id="hnF-lS-qAC"/>
+                                            <constraint firstAttribute="trailing" secondItem="BsB-wB-9Yj" secondAttribute="trailing" id="iN3-vf-Ss3"/>
+                                            <constraint firstItem="Y2L-ue-tjP" firstAttribute="top" secondItem="PdF-z4-zpU" secondAttribute="top" constant="122" id="kc3-h3-wom"/>
+                                            <constraint firstItem="Y2L-ue-tjP" firstAttribute="leading" secondItem="PdF-z4-zpU" secondAttribute="leading" id="lQ4-mq-SVR"/>
+                                            <constraint firstItem="Q80-j6-Q4M" firstAttribute="top" secondItem="D2A-i9-9fz" secondAttribute="bottom" constant="15" id="p4x-EW-NE2"/>
+                                            <constraint firstItem="D2A-i9-9fz" firstAttribute="leading" secondItem="PdF-z4-zpU" secondAttribute="leading" id="pWT-My-fTk"/>
+                                            <constraint firstItem="4Tp-gb-veV" firstAttribute="leading" secondItem="PdF-z4-zpU" secondAttribute="leading" id="pc4-9k-xOI"/>
+                                            <constraint firstItem="Q80-j6-Q4M" firstAttribute="leading" secondItem="PdF-z4-zpU" secondAttribute="leading" id="u10-iC-6iT"/>
+                                            <constraint firstItem="D2A-i9-9fz" firstAttribute="top" secondItem="BsB-wB-9Yj" secondAttribute="bottom" constant="15" id="uDh-1g-rbE"/>
+                                            <constraint firstItem="kHv-ii-Zac" firstAttribute="leading" secondItem="PdF-z4-zpU" secondAttribute="leading" id="uWm-SA-IsO"/>
+                                            <constraint firstItem="BsB-wB-9Yj" firstAttribute="top" secondItem="kHv-ii-Zac" secondAttribute="bottom" constant="15" id="w93-O5-MBr"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="PdF-z4-zpU" secondAttribute="bottom" id="C3A-vQ-Ewd"/>
+                                    <constraint firstItem="PdF-z4-zpU" firstAttribute="leading" secondItem="6fS-De-rBZ" secondAttribute="leading" id="Nij-LA-FT3"/>
+                                    <constraint firstItem="PdF-z4-zpU" firstAttribute="width" secondItem="6fS-De-rBZ" secondAttribute="width" id="pKh-66-w1W"/>
+                                    <constraint firstAttribute="trailing" secondItem="PdF-z4-zpU" secondAttribute="trailing" id="qnB-1H-4zR"/>
+                                    <constraint firstItem="PdF-z4-zpU" firstAttribute="top" secondItem="6fS-De-rBZ" secondAttribute="top" id="x2J-Qt-bHd"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.12941176469999999" green="0.1333333333" blue="0.23529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="aKB-iW-JxB" firstAttribute="trailing" secondItem="dVz-nx-OaG" secondAttribute="trailing" id="8gT-Wv-od1"/>
+                            <constraint firstItem="6fS-De-rBZ" firstAttribute="leading" secondItem="dVz-nx-OaG" secondAttribute="leading" id="C5R-ZR-fBY"/>
+                            <constraint firstItem="aKB-iW-JxB" firstAttribute="leading" secondItem="dVz-nx-OaG" secondAttribute="leading" id="KkT-eV-owa"/>
+                            <constraint firstItem="6fS-De-rBZ" firstAttribute="top" secondItem="aKB-iW-JxB" secondAttribute="bottom" id="TKv-6o-x2w"/>
+                            <constraint firstItem="Nmi-N8-8Yv" firstAttribute="top" secondItem="6fS-De-rBZ" secondAttribute="bottom" id="TuJ-VZ-B6y"/>
+                            <constraint firstItem="aKB-iW-JxB" firstAttribute="top" secondItem="dVz-nx-OaG" secondAttribute="top" id="ff1-kQ-J4U"/>
+                            <constraint firstAttribute="trailing" secondItem="6fS-De-rBZ" secondAttribute="trailing" id="tzM-B5-t9d"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Plb-ic-9xN"/>
+                    <size key="freeformSize" width="320" height="750"/>
+                    <connections>
+                        <outlet property="addressTxt" destination="Dka-6V-6u1" id="SM1-rx-A1W"/>
+                        <outlet property="categoryTblView" destination="HIc-UV-qP2" id="ofu-vy-u9l"/>
+                        <outlet property="categoryTxt" destination="XFW-xo-szS" id="IJv-bA-SyA"/>
+                        <outlet property="categoryView" destination="r7K-iE-8fn" id="hi6-6f-8gh"/>
+                        <outlet property="companyNameTxt" destination="pHj-v7-lBd" id="Ct0-80-T8X"/>
+                        <outlet property="contactTxt" destination="6Rk-02-5eI" id="qHj-T2-gPe"/>
+                        <outlet property="emailTxt" destination="pzZ-0R-GbY" id="boc-u4-qOB"/>
+                        <outlet property="logoBtn" destination="MOZ-yb-DLO" id="vq7-UD-LwR"/>
+                        <outlet property="searchCategoryTxt" destination="asj-Jp-CGY" id="XEH-Mo-Hen"/>
+                        <outlet property="userNameTxt" destination="mm3-79-XlE" id="Wd6-Da-bMj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DhT-fw-msZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="r7K-iE-8fn">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mSc-Y0-JvJ" customClass="ImageView" customModule="Card_Wallet" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="backgroundColorTypeAdapter">
+                                    <integer key="value" value="2"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </imageView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hQA-3d-bbe">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Category" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TwI-Q3-M5b" customClass="Label" customModule="Card_Wallet" customModuleProvider="target">
+                                    <rect key="frame" x="15" y="42.5" width="166.5" height="25.5"/>
+                                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="22"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                            <integer key="value" value="1"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="fontTypeAdapter" value="hb"/>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                            <real key="value" value="22"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H7r-J7-NCE" customClass="Button" customModule="Card_Wallet" customModuleProvider="target">
+                                    <rect key="frame" x="260" y="35.5" width="50" height="40"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="50" id="HMV-aR-Cxd"/>
+                                        <constraint firstAttribute="height" constant="40" id="kX0-Rw-Xgh"/>
+                                    </constraints>
+                                    <state key="normal" title="Done"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                            <integer key="value" value="1"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="fontTypeAdapter" value="hb"/>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                            <real key="value" value="16"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="clickToDoneCategory:" destination="Wkk-X7-Kao" eventType="touchUpInside" id="nbQ-qV-0Qi"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="TwI-Q3-M5b" secondAttribute="bottom" constant="12" id="6hX-wL-UYk"/>
+                                <constraint firstAttribute="trailing" secondItem="H7r-J7-NCE" secondAttribute="trailing" constant="10" id="NFu-CG-A16"/>
+                                <constraint firstItem="TwI-Q3-M5b" firstAttribute="leading" secondItem="hQA-3d-bbe" secondAttribute="leading" constant="15" id="Uks-U0-rhK"/>
+                                <constraint firstAttribute="height" constant="80" id="jkU-IN-XfJ"/>
+                                <constraint firstItem="H7r-J7-NCE" firstAttribute="centerY" secondItem="TwI-Q3-M5b" secondAttribute="centerY" id="wyP-hN-KnV"/>
+                            </constraints>
+                        </view>
+                        <searchBar contentMode="redraw" searchBarStyle="minimal" text="test" placeholder="Search..." translatesAutoresizingMaskIntoConstraints="NO" id="asj-Jp-CGY">
+                            <rect key="frame" x="0.0" y="80" width="320" height="56"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <outlet property="delegate" destination="Wkk-X7-Kao" id="8r5-DJ-0TJ"/>
+                            </connections>
+                        </searchBar>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="HIc-UV-qP2">
+                            <rect key="frame" x="0.0" y="136" width="320" height="432"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <prototypes>
+                                <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CustomCategoryTVC" id="ZUm-nq-Ztt" customClass="CustomCategoryTVC" customModule="Card_Wallet" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="28" width="320" height="44"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ZUm-nq-Ztt" id="S4I-ll-UuQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Company Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WWY-60-nNV" customClass="Label" customModule="Card_Wallet" customModuleProvider="target">
+                                                <rect key="frame" x="15" y="0.0" width="290" height="43"/>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                                        <integer key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="fontTypeAdapter" value="hr"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                        <real key="value" value="16"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="q6w-Is-4ko" customClass="ImageView" customModule="Card_Wallet" customModuleProvider="target">
+                                                <rect key="frame" x="15" y="43" width="290" height="1"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="1" id="9A9-Fw-5SU"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="backgroundColorTypeAdapter">
+                                                        <integer key="value" value="3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="WWY-60-nNV" firstAttribute="leading" secondItem="S4I-ll-UuQ" secondAttribute="leading" constant="15" id="AgQ-0w-mW2"/>
+                                            <constraint firstAttribute="trailing" secondItem="WWY-60-nNV" secondAttribute="trailing" constant="15" id="MVr-lB-cdo"/>
+                                            <constraint firstAttribute="trailing" secondItem="q6w-Is-4ko" secondAttribute="trailing" constant="15" id="QvJ-Jf-a2n"/>
+                                            <constraint firstAttribute="bottom" secondItem="q6w-Is-4ko" secondAttribute="bottom" id="XKm-e3-Jwk"/>
+                                            <constraint firstItem="WWY-60-nNV" firstAttribute="top" secondItem="S4I-ll-UuQ" secondAttribute="top" id="e1s-jK-b26"/>
+                                            <constraint firstItem="q6w-Is-4ko" firstAttribute="top" secondItem="WWY-60-nNV" secondAttribute="bottom" id="jTl-wo-yyU"/>
+                                            <constraint firstItem="q6w-Is-4ko" firstAttribute="leading" secondItem="S4I-ll-UuQ" secondAttribute="leading" constant="15" id="pn8-1P-tcT"/>
+                                        </constraints>
+                                    </tableViewCellContentView>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <connections>
+                                        <outlet property="titleLbl" destination="WWY-60-nNV" id="toA-dB-LIV"/>
+                                    </connections>
+                                </tableViewCell>
+                            </prototypes>
+                            <connections>
+                                <outlet property="dataSource" destination="Wkk-X7-Kao" id="hDJ-gU-9Ea"/>
+                                <outlet property="delegate" destination="Wkk-X7-Kao" id="kNx-cJ-A7S"/>
+                            </connections>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="HIc-UV-qP2" secondAttribute="bottom" id="24O-LI-2Xd"/>
+                        <constraint firstItem="HIc-UV-qP2" firstAttribute="leading" secondItem="r7K-iE-8fn" secondAttribute="leading" id="BuQ-TL-sev"/>
+                        <constraint firstItem="hQA-3d-bbe" firstAttribute="leading" secondItem="r7K-iE-8fn" secondAttribute="leading" id="IQn-W8-oJr"/>
+                        <constraint firstAttribute="trailing" secondItem="HIc-UV-qP2" secondAttribute="trailing" id="KfU-IN-PLr"/>
+                        <constraint firstItem="mSc-Y0-JvJ" firstAttribute="leading" secondItem="r7K-iE-8fn" secondAttribute="leading" id="MUl-CL-hue"/>
+                        <constraint firstItem="asj-Jp-CGY" firstAttribute="leading" secondItem="r7K-iE-8fn" secondAttribute="leading" id="W3E-l5-pFi"/>
+                        <constraint firstItem="mSc-Y0-JvJ" firstAttribute="top" secondItem="r7K-iE-8fn" secondAttribute="top" id="WA6-7u-CIw"/>
+                        <constraint firstAttribute="trailing" secondItem="asj-Jp-CGY" secondAttribute="trailing" id="hzq-bk-QWt"/>
+                        <constraint firstItem="mSc-Y0-JvJ" firstAttribute="trailing" secondItem="r7K-iE-8fn" secondAttribute="trailing" id="nxF-9e-gQl"/>
+                        <constraint firstAttribute="trailing" secondItem="hQA-3d-bbe" secondAttribute="trailing" id="pAr-2S-tf6"/>
+                        <constraint firstItem="hQA-3d-bbe" firstAttribute="top" secondItem="r7K-iE-8fn" secondAttribute="top" id="sYE-iq-sgM"/>
+                        <constraint firstItem="mSc-Y0-JvJ" firstAttribute="bottom" secondItem="r7K-iE-8fn" secondAttribute="bottom" id="t53-wx-gjI"/>
+                        <constraint firstItem="asj-Jp-CGY" firstAttribute="top" secondItem="hQA-3d-bbe" secondAttribute="bottom" id="uRB-SS-9JW"/>
+                        <constraint firstItem="HIc-UV-qP2" firstAttribute="top" secondItem="asj-Jp-CGY" secondAttribute="bottom" id="vpX-Yh-cPe"/>
+                    </constraints>
+                </view>
+            </objects>
+            <point key="canvasLocation" x="1161" y="-202"/>
+        </scene>
+        <!--My CardVC-->
+        <scene sceneID="AAZ-xj-zvf">
+            <objects>
+                <viewController storyboardIdentifier="MyCardVC" id="9EC-WV-nb8" customClass="MyCardVC" customModule="Card_Wallet" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UTm-cQ-t4t"/>
+                        <viewControllerLayoutGuide type="bottom" id="cfW-5S-zcQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ryN-gu-8bj">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XYU-ej-NOO">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b0k-ix-GkN">
+                                        <rect key="frame" x="0.0" y="30" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="33y-K9-RSj"/>
+                                            <constraint firstAttribute="height" constant="50" id="Ols-ZB-6Du"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" image="back"/>
+                                        <connections>
+                                            <action selector="clickToBack:" destination="9EC-WV-nb8" eventType="touchUpInside" id="YfH-zL-RhJ"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Card" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hiP-Gx-xlg" customClass="Label" customModule="Card_Wallet" customModuleProvider="target">
+                                        <rect key="frame" x="60" y="42.5" width="87" height="25.5"/>
+                                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="22"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="fontTypeAdapter" value="hb"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                <real key="value" value="22"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="b0k-ix-GkN" secondAttribute="bottom" id="URW-Ig-IVC"/>
+                                    <constraint firstAttribute="height" constant="80" id="bIG-xo-6Ao"/>
+                                    <constraint firstItem="hiP-Gx-xlg" firstAttribute="leading" secondItem="XYU-ej-NOO" secondAttribute="leading" constant="60" id="dJX-Pi-dEb"/>
+                                    <constraint firstAttribute="bottom" secondItem="hiP-Gx-xlg" secondAttribute="bottom" constant="12" id="doD-9X-9fY"/>
+                                    <constraint firstItem="b0k-ix-GkN" firstAttribute="leading" secondItem="XYU-ej-NOO" secondAttribute="leading" id="gld-Nb-r2R"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="w2p-0U-4Y7">
+                                <rect key="frame" x="0.0" y="90" width="320" height="468"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="9EC-WV-nb8" id="TsU-vo-H3O"/>
+                                    <outlet property="delegate" destination="9EC-WV-nb8" id="1O1-kB-hCh"/>
+                                </connections>
+                            </tableView>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2LS-R7-eun" customClass="Label" customModule="Card_Wallet" customModuleProvider="target">
+                                <rect key="frame" x="30" y="287" width="260" height="74"/>
+                                <string key="text">No card found
+
+Add your card by click below Add button.</string>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="fontTypeAdapter" value="hr"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                        <real key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I7c-lI-8pR" customClass="Button" customModule="Card_Wallet" customModuleProvider="target">
+                                <rect key="frame" x="255" y="488" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="Bcu-Bx-ctA"/>
+                                    <constraint firstAttribute="height" constant="50" id="iiS-Fq-xvt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="40"/>
+                                <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="5"/>
+                                <state key="normal" title="+"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="gradientBackgroundTypeAdapter">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="clickToAddCard:" destination="9EC-WV-nb8" eventType="touchUpInside" id="R5H-2r-hGb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.12941176469999999" green="0.1333333333" blue="0.23529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="I7c-lI-8pR" secondAttribute="trailing" constant="15" id="5to-li-Vkf"/>
+                            <constraint firstItem="w2p-0U-4Y7" firstAttribute="top" secondItem="XYU-ej-NOO" secondAttribute="bottom" constant="10" id="9CB-dr-Wwo"/>
+                            <constraint firstItem="2LS-R7-eun" firstAttribute="centerY" secondItem="w2p-0U-4Y7" secondAttribute="centerY" id="CMa-Re-6rj"/>
+                            <constraint firstItem="XYU-ej-NOO" firstAttribute="leading" secondItem="ryN-gu-8bj" secondAttribute="leading" id="MAH-f7-klg"/>
+                            <constraint firstItem="2LS-R7-eun" firstAttribute="leading" secondItem="ryN-gu-8bj" secondAttribute="leading" constant="30" id="Pgr-r2-3Q5"/>
+                            <constraint firstItem="XYU-ej-NOO" firstAttribute="trailing" secondItem="ryN-gu-8bj" secondAttribute="trailing" id="iLg-B0-x50"/>
+                            <constraint firstItem="cfW-5S-zcQ" firstAttribute="top" secondItem="w2p-0U-4Y7" secondAttribute="bottom" constant="10" id="k3u-bb-grb"/>
+                            <constraint firstItem="w2p-0U-4Y7" firstAttribute="leading" secondItem="ryN-gu-8bj" secondAttribute="leading" id="pAc-Xt-i3B"/>
+                            <constraint firstItem="cfW-5S-zcQ" firstAttribute="top" secondItem="I7c-lI-8pR" secondAttribute="bottom" constant="30" id="qRQ-6j-eQG"/>
+                            <constraint firstAttribute="trailing" secondItem="2LS-R7-eun" secondAttribute="trailing" constant="30" id="qi7-Og-WSd"/>
+                            <constraint firstItem="w2p-0U-4Y7" firstAttribute="trailing" secondItem="ryN-gu-8bj" secondAttribute="trailing" id="sFy-iD-nXG"/>
+                            <constraint firstItem="XYU-ej-NOO" firstAttribute="top" secondItem="ryN-gu-8bj" secondAttribute="top" id="zdB-m1-xWz"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="noDataFoundLbl" destination="2LS-R7-eun" id="eWV-zJ-BRm"/>
+                        <outlet property="tblView" destination="w2p-0U-4Y7" id="JE2-YS-oD8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rh9-Sa-7bc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2494" y="-298"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Wpk-HO-u8g">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="KHI-tw-m1B" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="t38-h6-CZL">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Wkk-X7-Kao" kind="relationship" relationship="rootViewController" id="1bM-IH-fEp"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1gl-dt-13R" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="451.875" y="-297.88732394366195"/>
+        </scene>
+        <!--Add Card ColorVC-->
+        <scene sceneID="PBz-wI-PyE">
+            <objects>
+                <viewController storyboardIdentifier="AddCardColorVC" id="W1h-IJ-fZO" customClass="AddCardColorVC" customModule="Card_Wallet" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="O9n-LL-Pnr"/>
+                        <viewControllerLayoutGuide type="bottom" id="TZ5-Ca-ywC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="M4v-36-1CT">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ol7-cQ-rW3">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Display Card" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kZt-13-EuB" customClass="Label" customModule="Card_Wallet" customModuleProvider="target">
+                                        <rect key="frame" x="15" y="42.5" width="134.5" height="25.5"/>
+                                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="22"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="fontTypeAdapter" value="hb"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                <real key="value" value="22"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="kZt-13-EuB" secondAttribute="bottom" constant="12" id="6Ff-8F-mus"/>
+                                    <constraint firstAttribute="height" constant="80" id="Qjo-4x-A7u"/>
+                                    <constraint firstItem="kZt-13-EuB" firstAttribute="leading" secondItem="ol7-cQ-rW3" secondAttribute="leading" constant="15" id="TAa-PN-h10"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Card design" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MfJ-dx-MPG" customClass="Label" customModule="Card_Wallet" customModuleProvider="target">
+                                <rect key="frame" x="15" y="100" width="81" height="17.5"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="fontTypeAdapter" value="hr"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                        <real key="value" value="14"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="OLr-O2-Phw">
+                                <rect key="frame" x="0.0" y="130" width="320" height="200"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="gj4-Yn-ESI"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="W1h-IJ-fZO" id="pUq-yG-T3P"/>
+                                    <outlet property="delegate" destination="W1h-IJ-fZO" id="PkH-3g-DZc"/>
+                                </connections>
+                            </tableView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="14z-bj-eTW">
+                                <rect key="frame" x="15" y="345" width="290" height="80"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="RXH-5K-FVk"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="Yyh-Oo-qrG">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CustomColorCVC" id="A0W-YJ-pdi" customClass="CustomColorCVC" customModule="Card_Wallet" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="1" width="78" height="78"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="78" height="78"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L29-c9-kU7" customClass="Button" customModule="Card_Wallet" customModuleProvider="target">
+                                                    <rect key="frame" x="5" y="5" width="68" height="68"/>
+                                                    <state key="selected" image="select_arrow"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="10"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </button>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="L29-c9-kU7" firstAttribute="top" secondItem="A0W-YJ-pdi" secondAttribute="top" constant="5" id="8Sz-yC-0rb"/>
+                                            <constraint firstAttribute="bottom" secondItem="L29-c9-kU7" secondAttribute="bottom" constant="5" id="FNC-Hf-IdR"/>
+                                            <constraint firstAttribute="trailing" secondItem="L29-c9-kU7" secondAttribute="trailing" constant="5" id="GjA-cN-p13"/>
+                                            <constraint firstItem="L29-c9-kU7" firstAttribute="leading" secondItem="A0W-YJ-pdi" secondAttribute="leading" constant="5" id="n5a-aT-Zhj"/>
+                                        </constraints>
+                                        <size key="customSize" width="78" height="78"/>
+                                        <connections>
+                                            <outlet property="colorBtn" destination="L29-c9-kU7" id="UY5-Ru-etn"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="W1h-IJ-fZO" id="PA7-gd-l1h"/>
+                                    <outlet property="delegate" destination="W1h-IJ-fZO" id="Ef9-Gt-mET"/>
+                                </connections>
+                            </collectionView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vuZ-Yu-ADC">
+                                <rect key="frame" x="0.0" y="498" width="320" height="60"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="niF-ry-RNY" customClass="Button" customModule="Card_Wallet" customModuleProvider="target">
+                                        <rect key="frame" x="17" y="7" width="130" height="46"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="130" id="3MV-39-5GB"/>
+                                            <constraint firstAttribute="height" constant="46" id="Foi-Be-FAm"/>
+                                        </constraints>
+                                        <state key="normal" title="Back"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="23"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="fontTypeAdapter" value="hb"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                <real key="value" value="18"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="gradientBackgroundTypeAdapter">
+                                                <integer key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="clickToBack:" destination="W1h-IJ-fZO" eventType="touchUpInside" id="02s-Oh-C1i"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d4d-fp-xz4" customClass="Button" customModule="Card_Wallet" customModuleProvider="target">
+                                        <rect key="frame" x="172" y="7" width="130" height="46"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="46" id="LeT-1s-JCS"/>
+                                            <constraint firstAttribute="width" constant="130" id="gMq-xd-FWy"/>
+                                        </constraints>
+                                        <state key="normal" title="Add Card"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="23"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="fontTypeAdapter" value="hb"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                <real key="value" value="18"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="gradientBackgroundTypeAdapter">
+                                                <integer key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="clickToAddCard:" destination="W1h-IJ-fZO" eventType="touchUpInside" id="Wmk-8L-nHb"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="d4d-fp-xz4" firstAttribute="centerY" secondItem="vuZ-Yu-ADC" secondAttribute="centerY" id="Bkt-IL-hbR"/>
+                                    <constraint firstItem="d4d-fp-xz4" firstAttribute="centerX" secondItem="vuZ-Yu-ADC" secondAttribute="centerX" constant="77" id="St7-xU-t8x"/>
+                                    <constraint firstAttribute="height" constant="60" id="jJE-Go-ygr"/>
+                                    <constraint firstItem="d4d-fp-xz4" firstAttribute="leading" secondItem="niF-ry-RNY" secondAttribute="trailing" constant="25" id="k86-QG-nOZ"/>
+                                    <constraint firstItem="d4d-fp-xz4" firstAttribute="centerY" secondItem="niF-ry-RNY" secondAttribute="centerY" id="uoH-wT-tAm"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.12941176469999999" green="0.1333333333" blue="0.23529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ol7-cQ-rW3" firstAttribute="trailing" secondItem="M4v-36-1CT" secondAttribute="trailing" id="2lb-Zv-nCi"/>
+                            <constraint firstItem="ol7-cQ-rW3" firstAttribute="leading" secondItem="M4v-36-1CT" secondAttribute="leading" id="4yF-OL-gSk"/>
+                            <constraint firstItem="TZ5-Ca-ywC" firstAttribute="top" secondItem="vuZ-Yu-ADC" secondAttribute="bottom" constant="10" id="6EL-Na-DwY"/>
+                            <constraint firstItem="vuZ-Yu-ADC" firstAttribute="leading" secondItem="M4v-36-1CT" secondAttribute="leading" id="7QD-6Z-BaY"/>
+                            <constraint firstItem="ol7-cQ-rW3" firstAttribute="top" secondItem="M4v-36-1CT" secondAttribute="top" id="FS8-hb-OlX"/>
+                            <constraint firstItem="MfJ-dx-MPG" firstAttribute="top" secondItem="ol7-cQ-rW3" secondAttribute="bottom" constant="20" id="GAW-NI-euQ"/>
+                            <constraint firstItem="14z-bj-eTW" firstAttribute="top" secondItem="OLr-O2-Phw" secondAttribute="bottom" constant="15" id="GSc-Tx-Tok"/>
+                            <constraint firstItem="OLr-O2-Phw" firstAttribute="leading" secondItem="M4v-36-1CT" secondAttribute="leading" id="KXU-Lq-rE8"/>
+                            <constraint firstItem="OLr-O2-Phw" firstAttribute="top" secondItem="ol7-cQ-rW3" secondAttribute="bottom" constant="50" id="Mh0-JY-3tu"/>
+                            <constraint firstItem="vuZ-Yu-ADC" firstAttribute="trailing" secondItem="M4v-36-1CT" secondAttribute="trailing" id="OPc-G0-uwr"/>
+                            <constraint firstAttribute="trailing" secondItem="14z-bj-eTW" secondAttribute="trailing" constant="15" id="W0u-xK-4vp"/>
+                            <constraint firstItem="14z-bj-eTW" firstAttribute="leading" secondItem="M4v-36-1CT" secondAttribute="leading" constant="15" id="gZy-p1-Y33"/>
+                            <constraint firstItem="OLr-O2-Phw" firstAttribute="trailing" secondItem="M4v-36-1CT" secondAttribute="trailing" id="kwZ-Ux-aPd"/>
+                            <constraint firstItem="MfJ-dx-MPG" firstAttribute="leading" secondItem="M4v-36-1CT" secondAttribute="leading" constant="15" id="nXx-ZZ-5zA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addCardBtn" destination="d4d-fp-xz4" id="4WK-wD-j23"/>
+                        <outlet property="colorCV" destination="14z-bj-eTW" id="KrO-HP-Upn"/>
+                        <outlet property="tblView" destination="OLr-O2-Phw" id="XN1-n8-YOf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g5d-Lo-51D" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1834" y="-299"/>
+        </scene>
+        <!--Share CardVC-->
+        <scene sceneID="tHw-vs-LCa">
+            <objects>
+                <viewController storyboardIdentifier="ShareCardVC" id="rbZ-zj-6cJ" customClass="ShareCardVC" customModule="Card_Wallet" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oWH-JG-zR2"/>
+                        <viewControllerLayoutGuide type="bottom" id="dZp-vV-Oa1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="AP1-Sc-OSi">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6wl-5Y-adu">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UpU-v0-muC">
+                                        <rect key="frame" x="0.0" y="30" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="UJw-n1-uvU"/>
+                                            <constraint firstAttribute="width" constant="50" id="a5X-Sd-VLe"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" image="back"/>
+                                        <connections>
+                                            <action selector="clickToBack:" destination="rbZ-zj-6cJ" eventType="touchUpInside" id="90T-wx-BFr"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Share Card" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AlA-oA-vo5" customClass="Label" customModule="Card_Wallet" customModuleProvider="target">
+                                        <rect key="frame" x="60" y="42.5" width="117.5" height="25.5"/>
+                                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="22"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="fontTypeAdapter" value="hb"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                <real key="value" value="22"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nf9-8a-1a2" customClass="Button" customModule="Card_Wallet" customModuleProvider="target">
+                                        <rect key="frame" x="260" y="35.5" width="50" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="BdX-Zd-0qA"/>
+                                            <constraint firstAttribute="height" constant="40" id="Esw-Ky-6eH"/>
+                                        </constraints>
+                                        <state key="normal" title="Share"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="fontTypeAdapter" value="hb"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                <real key="value" value="16"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="clickToShare:" destination="rbZ-zj-6cJ" eventType="touchUpInside" id="f7j-2y-13i"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="0da-nF-0h4"/>
+                                    <constraint firstAttribute="trailing" secondItem="nf9-8a-1a2" secondAttribute="trailing" constant="10" id="4hn-th-ciC"/>
+                                    <constraint firstAttribute="bottom" secondItem="UpU-v0-muC" secondAttribute="bottom" id="XXM-Qq-IF4"/>
+                                    <constraint firstItem="UpU-v0-muC" firstAttribute="leading" secondItem="6wl-5Y-adu" secondAttribute="leading" id="Zvf-9G-K8D"/>
+                                    <constraint firstAttribute="bottom" secondItem="AlA-oA-vo5" secondAttribute="bottom" constant="12" id="ahN-WK-wF9"/>
+                                    <constraint firstItem="nf9-8a-1a2" firstAttribute="centerY" secondItem="AlA-oA-vo5" secondAttribute="centerY" id="iCI-bH-CuD"/>
+                                    <constraint firstItem="AlA-oA-vo5" firstAttribute="leading" secondItem="6wl-5Y-adu" secondAttribute="leading" constant="60" id="qgK-7n-rdT"/>
+                                </constraints>
+                            </view>
+                            <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="Search..." translatesAutoresizingMaskIntoConstraints="NO" id="6xt-5O-VAv">
+                                <rect key="frame" x="0.0" y="80" width="320" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="rbZ-zj-6cJ" id="oXF-uJ-Lji"/>
+                                </connections>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rl7-ZU-BjM">
+                                <rect key="frame" x="0.0" y="136" width="320" height="422"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="rbZ-zj-6cJ" id="4MX-vR-J3X"/>
+                                    <outlet property="delegate" destination="rbZ-zj-6cJ" id="n32-pJ-nkv"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.12941176469999999" green="0.1333333333" blue="0.23529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6wl-5Y-adu" firstAttribute="trailing" secondItem="AP1-Sc-OSi" secondAttribute="trailing" id="DvZ-4g-XDv"/>
+                            <constraint firstItem="rl7-ZU-BjM" firstAttribute="top" secondItem="6xt-5O-VAv" secondAttribute="bottom" id="Ezi-VN-bj4"/>
+                            <constraint firstAttribute="trailing" secondItem="6xt-5O-VAv" secondAttribute="trailing" id="IRT-eE-inb"/>
+                            <constraint firstItem="rl7-ZU-BjM" firstAttribute="trailing" secondItem="AP1-Sc-OSi" secondAttribute="trailing" id="L9m-Ip-ewF"/>
+                            <constraint firstItem="6xt-5O-VAv" firstAttribute="leading" secondItem="AP1-Sc-OSi" secondAttribute="leading" id="NiW-Tj-4hK"/>
+                            <constraint firstItem="6xt-5O-VAv" firstAttribute="top" secondItem="6wl-5Y-adu" secondAttribute="bottom" id="Vkl-eS-cGZ"/>
+                            <constraint firstItem="6wl-5Y-adu" firstAttribute="leading" secondItem="AP1-Sc-OSi" secondAttribute="leading" id="YDB-um-nQa"/>
+                            <constraint firstItem="dZp-vV-Oa1" firstAttribute="top" secondItem="rl7-ZU-BjM" secondAttribute="bottom" constant="10" id="hT6-07-zNt"/>
+                            <constraint firstItem="6wl-5Y-adu" firstAttribute="top" secondItem="AP1-Sc-OSi" secondAttribute="top" id="sYa-gk-E5R"/>
+                            <constraint firstItem="rl7-ZU-BjM" firstAttribute="leading" secondItem="AP1-Sc-OSi" secondAttribute="leading" id="uEd-gL-HrN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="searchbar" destination="6xt-5O-VAv" id="Xar-bk-5O0"/>
+                        <outlet property="tblView" destination="rl7-ZU-BjM" id="CPM-ZA-muB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3PH-AF-Wcl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3173" y="-300"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="add_logo" width="42.5" height="42.5"/>
+        <image name="back" width="20" height="20"/>
+        <image name="google_map" width="32" height="32"/>
+        <image name="select_arrow" width="28.5" height="21"/>
+    </resources>
+</document>

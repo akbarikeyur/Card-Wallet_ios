@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CustomNotificationTVC" id="KGk-i7-Jjw" customClass="CustomNotificationTVC" customModule="Card_Wallet" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="69.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SRK-Gg-qDW" customClass="View" customModule="Card_Wallet" customModuleProvider="target">
+                        <rect key="frame" x="5" y="5" width="310" height="59.5"/>
+                        <subviews>
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F2j-Hl-YVu" customClass="Button" customModule="Card_Wallet" customModuleProvider="target">
+                                <rect key="frame" x="5" y="10" width="40" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="TSD-BS-Nqj"/>
+                                    <constraint firstAttribute="width" constant="40" id="bOz-hd-Syd"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Keyur Akbari" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Gg7-qd-xXN" customClass="Label" customModule="Card_Wallet" customModuleProvider="target">
+                                <rect key="frame" x="55" y="10" width="245" height="18.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="18.5" id="pLL-Xi-XMg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="fontTypeAdapter" value="hb"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                        <real key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Keyur Akbari send you invitatin to add Hash Technocrats card." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rRV-ai-2b5" customClass="Label" customModule="Card_Wallet" customModuleProvider="target">
+                                <rect key="frame" x="55" y="28.5" width="245" height="26"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="fontTypeAdapter" value="hr"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                        <real key="value" value="13"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="rRV-ai-2b5" secondAttribute="trailing" constant="10" id="2y1-v3-QRK"/>
+                            <constraint firstItem="Gg7-qd-xXN" firstAttribute="top" secondItem="SRK-Gg-qDW" secondAttribute="top" constant="10" id="ACZ-ct-ljX"/>
+                            <constraint firstAttribute="bottom" secondItem="rRV-ai-2b5" secondAttribute="bottom" constant="5" id="H6o-9Q-uvL"/>
+                            <constraint firstAttribute="trailing" secondItem="Gg7-qd-xXN" secondAttribute="trailing" constant="10" id="Jfy-BW-JjW"/>
+                            <constraint firstItem="Gg7-qd-xXN" firstAttribute="leading" secondItem="F2j-Hl-YVu" secondAttribute="trailing" constant="10" id="Lrb-ue-mTA"/>
+                            <constraint firstItem="F2j-Hl-YVu" firstAttribute="leading" secondItem="SRK-Gg-qDW" secondAttribute="leading" constant="5" id="RvW-hj-wKp"/>
+                            <constraint firstItem="rRV-ai-2b5" firstAttribute="top" secondItem="Gg7-qd-xXN" secondAttribute="bottom" id="d77-Lw-cwG"/>
+                            <constraint firstItem="F2j-Hl-YVu" firstAttribute="top" secondItem="SRK-Gg-qDW" secondAttribute="top" constant="10" id="eWn-5l-0Rt"/>
+                            <constraint firstItem="rRV-ai-2b5" firstAttribute="leading" secondItem="F2j-Hl-YVu" secondAttribute="trailing" constant="10" id="kcj-Ng-i3x"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="SRK-Gg-qDW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="7gR-LQ-c6W"/>
+                    <constraint firstItem="SRK-Gg-qDW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="Cll-gr-7RX"/>
+                    <constraint firstAttribute="bottom" secondItem="SRK-Gg-qDW" secondAttribute="bottom" constant="5" id="QaW-xF-pR4"/>
+                    <constraint firstAttribute="trailing" secondItem="SRK-Gg-qDW" secondAttribute="trailing" constant="5" id="QoD-bG-HHr"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="nameLbl" destination="Gg7-qd-xXN" id="gTK-Zj-3L2"/>
+                <outlet property="outerView" destination="SRK-Gg-qDW" id="2Lt-5L-fXG"/>
+                <outlet property="profilePicBtn" destination="F2j-Hl-YVu" id="8H9-3E-fXu"/>
+                <outlet property="subTitleLbl" destination="rRV-ai-2b5" id="Ne0-TR-EdQ"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

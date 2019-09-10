@@ -1,0 +1,1104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Srb-qZ-8Nr">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--LoginVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="LoginVC" id="BYZ-38-t0r" customClass="LoginVC" customModule="Card_Wallet" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="app_logo" translatesAutoresizingMaskIntoConstraints="NO" id="bcN-DH-bJO" customClass="ImageView" customModule="Card_Wallet" customModuleProvider="target">
+                                <rect key="frame" x="85" y="159" width="150" height="150"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="cQE-W0-2WF"/>
+                                    <constraint firstAttribute="width" constant="150" id="zNa-bW-IEf"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VISITING CARD WALLET" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q9v-LA-Mka" customClass="Label" customModule="Card_Wallet" customModuleProvider="target">
+                                <rect key="frame" x="41.5" y="329" width="237" height="23"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="fontTypeAdapter" value="hb"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IMH-yh-Ovw" customClass="Button" customModule="Card_Wallet" customModuleProvider="target">
+                                <rect key="frame" x="45" y="424" width="230" height="44"/>
+                                <color key="backgroundColor" red="0.84313725490196079" green="0.26666666666666666" blue="0.22352941176470587" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="230" id="hBl-WF-hlI"/>
+                                    <constraint firstAttribute="height" constant="44" id="iOf-sI-GRT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="16"/>
+                                <inset key="imageEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Let's Start"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="fontTypeAdapter" value="hb"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                        <real key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="clickToStart:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AQK-ko-hWx"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.12941176470588234" green="0.13333333333333333" blue="0.23529411764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="bcN-DH-bJO" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-50" id="J73-gr-KUR"/>
+                            <constraint firstItem="Q9v-LA-Mka" firstAttribute="top" secondItem="bcN-DH-bJO" secondAttribute="bottom" constant="20" id="Txq-ag-Zjj"/>
+                            <constraint firstItem="bcN-DH-bJO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UfU-pV-EC2"/>
+                            <constraint firstItem="Q9v-LA-Mka" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lgQ-82-cj6"/>
+                            <constraint firstItem="IMH-yh-Ovw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ybg-XF-SjW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="IMH-yh-Ovw" secondAttribute="bottom" constant="100" id="yun-Nu-811"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="9B5-so-55m"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1086" y="31"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="5lW-KH-bV0">
+            <objects>
+                <navigationController storyboardIdentifier="SideMenuNavigationVC" navigationBarHidden="YES" id="RV4-7E-yER" sceneMemberID="viewController">
+                    <nil key="simulatedTopBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="YgV-LC-dYM">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aSR-Wn-b17" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="390" y="747"/>
+        </scene>
+        <!--DashboardVC-->
+        <scene sceneID="mUE-tU-6rA">
+            <objects>
+                <viewController storyboardIdentifier="DashboardVC" id="XH4-i9-ocB" customClass="DashboardVC" customModule="Card_Wallet" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iuw-ZA-6ql">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PLd-Cd-WaS">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gwz-NO-sTS">
+                                        <rect key="frame" x="0.0" y="30" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="KGY-Xk-IYI"/>
+                                            <constraint firstAttribute="width" constant="50" id="M9N-Va-xph"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" image="menu"/>
+                                        <connections>
+                                            <action selector="clickToSideMenu:" destination="XH4-i9-ocB" eventType="touchUpInside" id="kHw-1F-ayl"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Card Wallet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qZi-ps-cmz" customClass="Label" customModule="Card_Wallet" customModuleProvider="target">
+                                        <rect key="frame" x="60" y="42.5" width="157" height="25.5"/>
+                                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="22"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="fontTypeAdapter" value="hb"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                <real key="value" value="22"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mXn-cA-tF3" customClass="Button" customModule="Card_Wallet" customModuleProvider="target">
+                                        <rect key="frame" x="265" y="40" width="40" height="40"/>
+                                        <color key="backgroundColor" red="0.84313725490000002" green="0.2666666667" blue="0.22352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="14r-Qr-vjr"/>
+                                            <constraint firstAttribute="height" constant="40" id="ERY-Zt-GLP"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="clickToProfilePicBtn:" destination="XH4-i9-ocB" eventType="touchUpInside" id="tg1-B2-ead"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="mXn-cA-tF3" secondAttribute="trailing" constant="15" id="FaW-zz-tcA"/>
+                                    <constraint firstAttribute="bottom" secondItem="qZi-ps-cmz" secondAttribute="bottom" constant="12" id="Gie-tg-XhU"/>
+                                    <constraint firstAttribute="height" constant="80" id="HRw-nu-8Kl"/>
+                                    <constraint firstAttribute="bottom" secondItem="mXn-cA-tF3" secondAttribute="bottom" id="bf2-2n-vSV"/>
+                                    <constraint firstItem="qZi-ps-cmz" firstAttribute="leading" secondItem="PLd-Cd-WaS" secondAttribute="leading" constant="60" id="f3x-bE-JTc"/>
+                                    <constraint firstAttribute="bottom" secondItem="Gwz-NO-sTS" secondAttribute="bottom" id="lO2-Cl-myZ"/>
+                                    <constraint firstItem="Gwz-NO-sTS" firstAttribute="leading" secondItem="PLd-Cd-WaS" secondAttribute="leading" id="zMW-dY-Cge"/>
+                                </constraints>
+                            </view>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="alg-H2-lUv">
+                                <rect key="frame" x="0.0" y="84" width="270" height="56"/>
+                                <color key="barTintColor" red="0.12941176469999999" green="0.1333333333" blue="0.23529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="XH4-i9-ocB" id="Pop-9Q-DDD"/>
+                                </connections>
+                            </searchBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LjX-xW-2xd">
+                                <rect key="frame" x="270" y="84" width="50" height="56"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="4" maxY="0.0"/>
+                                <state key="normal" image="filter"/>
+                                <connections>
+                                    <action selector="clickToFilter:" destination="XH4-i9-ocB" eventType="touchUpInside" id="cvF-Ro-ygb"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="iGd-xv-0Bl">
+                                <rect key="frame" x="0.0" y="140" width="320" height="418"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="XH4-i9-ocB" id="eLG-lO-c1H"/>
+                                    <outlet property="delegate" destination="XH4-i9-ocB" id="mxg-jZ-iWo"/>
+                                </connections>
+                            </tableView>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S6X-nG-eL6" customClass="Label" customModule="Card_Wallet" customModuleProvider="target">
+                                <rect key="frame" x="30" y="312" width="260" height="74"/>
+                                <string key="text">No card found
+
+You can add your own card by click below Add button.</string>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="fontTypeAdapter" value="hr"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                        <real key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rnl-Fx-JaM" customClass="Button" customModule="Card_Wallet" customModuleProvider="target">
+                                <rect key="frame" x="255" y="493" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="bAb-vG-hxy"/>
+                                    <constraint firstAttribute="height" constant="50" id="eWR-cS-2YO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="40"/>
+                                <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="5"/>
+                                <state key="normal" title="+"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="gradientBackgroundTypeAdapter">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="clickToAddCard:" destination="XH4-i9-ocB" eventType="touchUpInside" id="R82-eE-4nk"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.12941176469999999" green="0.1333333333" blue="0.23529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Sgi-Bk-eBU" firstAttribute="bottom" secondItem="rnl-Fx-JaM" secondAttribute="bottom" constant="25" id="1d9-fv-uvC"/>
+                            <constraint firstItem="Sgi-Bk-eBU" firstAttribute="bottom" secondItem="iGd-xv-0Bl" secondAttribute="bottom" constant="10" id="23o-N2-y5j"/>
+                            <constraint firstItem="alg-H2-lUv" firstAttribute="trailing" secondItem="Sgi-Bk-eBU" secondAttribute="trailing" constant="-50" id="3QV-AY-BmG"/>
+                            <constraint firstItem="LjX-xW-2xd" firstAttribute="top" secondItem="alg-H2-lUv" secondAttribute="top" id="Dpi-RT-Pbd"/>
+                            <constraint firstItem="alg-H2-lUv" firstAttribute="top" secondItem="PLd-Cd-WaS" secondAttribute="bottom" constant="4" id="HXc-yz-RhG"/>
+                            <constraint firstItem="LjX-xW-2xd" firstAttribute="trailing" secondItem="Sgi-Bk-eBU" secondAttribute="trailing" id="HkI-H9-WDI"/>
+                            <constraint firstItem="PLd-Cd-WaS" firstAttribute="leading" secondItem="Sgi-Bk-eBU" secondAttribute="leading" id="Jlf-Cz-1Ni"/>
+                            <constraint firstItem="Sgi-Bk-eBU" firstAttribute="trailing" secondItem="rnl-Fx-JaM" secondAttribute="trailing" constant="15" id="MjF-zk-0FD"/>
+                            <constraint firstItem="S6X-nG-eL6" firstAttribute="leading" secondItem="Sgi-Bk-eBU" secondAttribute="leading" constant="30" id="SrB-yn-qtu"/>
+                            <constraint firstItem="Sgi-Bk-eBU" firstAttribute="trailing" secondItem="PLd-Cd-WaS" secondAttribute="trailing" id="Tyy-e1-vGr"/>
+                            <constraint firstItem="iGd-xv-0Bl" firstAttribute="top" secondItem="alg-H2-lUv" secondAttribute="bottom" id="Y0A-R4-x6s"/>
+                            <constraint firstItem="PLd-Cd-WaS" firstAttribute="top" secondItem="iuw-ZA-6ql" secondAttribute="top" id="fiI-be-0yV"/>
+                            <constraint firstItem="alg-H2-lUv" firstAttribute="leading" secondItem="Sgi-Bk-eBU" secondAttribute="leading" id="gST-kk-T5m"/>
+                            <constraint firstItem="S6X-nG-eL6" firstAttribute="centerY" secondItem="iGd-xv-0Bl" secondAttribute="centerY" id="jA5-03-eTL"/>
+                            <constraint firstItem="Sgi-Bk-eBU" firstAttribute="trailing" secondItem="S6X-nG-eL6" secondAttribute="trailing" constant="30" id="jay-gp-0KU"/>
+                            <constraint firstItem="LjX-xW-2xd" firstAttribute="bottom" secondItem="alg-H2-lUv" secondAttribute="bottom" id="k17-U7-Rcb"/>
+                            <constraint firstItem="iGd-xv-0Bl" firstAttribute="leading" secondItem="Sgi-Bk-eBU" secondAttribute="leading" id="nDi-gd-mbS"/>
+                            <constraint firstItem="Sgi-Bk-eBU" firstAttribute="trailing" secondItem="iGd-xv-0Bl" secondAttribute="trailing" id="urm-ib-gGX"/>
+                            <constraint firstItem="LjX-xW-2xd" firstAttribute="leading" secondItem="alg-H2-lUv" secondAttribute="trailing" id="vcp-HQ-0td"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Sgi-Bk-eBU"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="zQG-Gp-CUM"/>
+                    <connections>
+                        <outlet property="noDataFoundLbl" destination="S6X-nG-eL6" id="6W3-JH-KQr"/>
+                        <outlet property="profilePicBtn" destination="mXn-cA-tF3" id="NMq-EU-cj3"/>
+                        <outlet property="searchTxt" destination="alg-H2-lUv" id="LTc-Ps-E2W"/>
+                        <outlet property="tblView" destination="iGd-xv-0Bl" id="5L3-JM-RJ1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cIf-N0-Nmn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3152" y="747"/>
+        </scene>
+        <!--Side MenuVC-->
+        <scene sceneID="A5c-MU-S9r">
+            <objects>
+                <viewController storyboardIdentifier="SideMenuVC" id="uUS-uU-DeB" customClass="SideMenuVC" customModule="Card_Wallet" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4fc-Uj-6O9">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cXf-ER-4pI">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U9R-TK-OT5" customClass="Button" customModule="Card_Wallet" customModuleProvider="target">
+                                        <rect key="frame" x="15" y="50" width="80" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="fR2-Iw-lF4"/>
+                                            <constraint firstAttribute="width" constant="80" id="oTS-29-8pa"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="user_placeholder"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="40"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Keyur Akbari" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="39u-XD-p9X" customClass="Label" customModule="Card_Wallet" customModuleProvider="target">
+                                        <rect key="frame" x="105" y="79.5" width="195" height="21"/>
+                                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="18"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="fontTypeAdapter" value="hb"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                <real key="value" value="18"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="39u-XD-p9X" firstAttribute="centerY" secondItem="U9R-TK-OT5" secondAttribute="centerY" id="15o-1A-dmH"/>
+                                    <constraint firstItem="39u-XD-p9X" firstAttribute="leading" secondItem="U9R-TK-OT5" secondAttribute="trailing" constant="10" id="3ZG-7J-t81"/>
+                                    <constraint firstAttribute="trailing" secondItem="39u-XD-p9X" secondAttribute="trailing" constant="20" id="G1x-Tr-AcC"/>
+                                    <constraint firstItem="U9R-TK-OT5" firstAttribute="leading" secondItem="cXf-ER-4pI" secondAttribute="leading" constant="15" id="PiV-GB-Laf"/>
+                                    <constraint firstAttribute="height" constant="150" id="TVk-Id-eK7"/>
+                                    <constraint firstAttribute="bottom" secondItem="U9R-TK-OT5" secondAttribute="bottom" constant="20" id="oHk-tP-sob"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7D9-ce-jhz">
+                                <rect key="frame" x="0.0" y="150" width="320" height="418"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CustomSideMenuTVC" rowHeight="50" id="6SK-Hl-OF7" customClass="CustomSideMenuTVC" customModule="Card_Wallet" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6SK-Hl-OF7" id="aUI-ev-zT0">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Keyur Akbari" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fuB-yg-diG" customClass="Label" customModule="Card_Wallet" customModuleProvider="target">
+                                                    <rect key="frame" x="20" y="5" width="280" height="40"/>
+                                                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                                            <integer key="value" value="1"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="fontTypeAdapter" value="hr"/>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                            <real key="value" value="16"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ODt-G3-Mxs">
+                                                    <rect key="frame" x="0.0" y="49" width="320" height="1"/>
+                                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.49603873239436619" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="1" id="jnA-bh-8VA"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="ODt-G3-Mxs" secondAttribute="bottom" id="46K-n9-rFJ"/>
+                                                <constraint firstAttribute="trailing" secondItem="fuB-yg-diG" secondAttribute="trailing" constant="20" id="Px4-fa-upl"/>
+                                                <constraint firstItem="fuB-yg-diG" firstAttribute="leading" secondItem="aUI-ev-zT0" secondAttribute="leading" constant="20" id="UIh-bw-2I9"/>
+                                                <constraint firstAttribute="trailing" secondItem="ODt-G3-Mxs" secondAttribute="trailing" id="hFf-dn-PNP"/>
+                                                <constraint firstAttribute="bottom" secondItem="fuB-yg-diG" secondAttribute="bottom" constant="5" id="hIf-Mj-jNO"/>
+                                                <constraint firstItem="fuB-yg-diG" firstAttribute="top" secondItem="aUI-ev-zT0" secondAttribute="top" constant="5" id="o1A-Jy-1It"/>
+                                                <constraint firstItem="ODt-G3-Mxs" firstAttribute="leading" secondItem="aUI-ev-zT0" secondAttribute="leading" id="vSq-uS-W9M"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="titleLbl" destination="fuB-yg-diG" id="QLB-E5-Jfi"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="uUS-uU-DeB" id="VlB-6R-j7h"/>
+                                    <outlet property="delegate" destination="uUS-uU-DeB" id="Wz0-rn-PoW"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.12941176470588234" green="0.13333333333333333" blue="0.23529411764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="c0h-Z7-XZ4" firstAttribute="trailing" secondItem="7D9-ce-jhz" secondAttribute="trailing" id="3D2-9f-O6e"/>
+                            <constraint firstItem="cXf-ER-4pI" firstAttribute="leading" secondItem="4fc-Uj-6O9" secondAttribute="leading" id="GiR-aw-v1H"/>
+                            <constraint firstItem="cXf-ER-4pI" firstAttribute="top" secondItem="4fc-Uj-6O9" secondAttribute="top" id="LbG-sV-h66"/>
+                            <constraint firstItem="7D9-ce-jhz" firstAttribute="top" secondItem="cXf-ER-4pI" secondAttribute="bottom" id="X02-Iy-x0q"/>
+                            <constraint firstItem="7D9-ce-jhz" firstAttribute="leading" secondItem="c0h-Z7-XZ4" secondAttribute="leading" id="aTy-q6-mFt"/>
+                            <constraint firstItem="c0h-Z7-XZ4" firstAttribute="bottom" secondItem="7D9-ce-jhz" secondAttribute="bottom" id="cMK-TR-ORX"/>
+                            <constraint firstItem="c0h-Z7-XZ4" firstAttribute="trailing" secondItem="cXf-ER-4pI" secondAttribute="trailing" id="wDJ-Zf-nuy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="c0h-Z7-XZ4"/>
+                    </view>
+                    <connections>
+                        <outlet property="profilePicBtn" destination="U9R-TK-OT5" id="YeG-2d-2MP"/>
+                        <outlet property="tblView" destination="7D9-ce-jhz" id="8WU-FH-KRU"/>
+                        <outlet property="usernameLbl" destination="39u-XD-p9X" id="B7l-af-E5z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SQZ-ba-Zwr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1069" y="747"/>
+        </scene>
+        <!--Side Menu Container View Controller-->
+        <scene sceneID="zvt-ff-2ff">
+            <objects>
+                <viewController storyboardIdentifier="MFSideMenuContainerViewController" id="EqN-ZK-8N4" customClass="MFSideMenuContainerViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fOr-E1-gRH">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="OTK-FY-aQR"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R4L-8d-R93" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1736" y="747"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="m64-B0-AaN">
+            <objects>
+                <navigationController storyboardIdentifier="LoginVCNavigation" automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="Srb-qZ-8Nr" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="aq0-SW-Bml">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Oc0-Km-o02"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="966-yw-zV8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="390" y="31"/>
+        </scene>
+        <!--Sign InVC-->
+        <scene sceneID="L1S-5X-qya">
+            <objects>
+                <viewController storyboardIdentifier="SignInVC" id="PMB-xG-Cbx" customClass="SignInVC" customModule="Card_Wallet" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zQT-Cm-17S">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SIGN-IN" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="txY-D0-lGE" customClass="Label" customModule="Card_Wallet" customModuleProvider="target">
+                                <rect key="frame" x="113" y="136" width="94.5" height="29"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="fontTypeAdapter" value="hb"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S8Y-2q-qTn">
+                                <rect key="frame" x="10" y="195" width="300" height="258"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dan-i8-UFp">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="60"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f3f-E7-m3b" customClass="Label" customModule="Card_Wallet" customModuleProvider="target">
+                                                <rect key="frame" x="15" y="0.0" width="38" height="17.5"/>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                                        <integer key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="fontTypeAdapter" value="hr"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                        <real key="value" value="14"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="o5m-ug-6vC" customClass="TextField" customModule="Card_Wallet" customModuleProvider="target">
+                                                <rect key="frame" x="15" y="17.5" width="270" height="42.5"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" returnKeyType="next" textContentType="name"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                                        <integer key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="fontTypeAdapter" value="hr"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                        <real key="value" value="16"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Utk-pC-d0l" customClass="ImageView" customModule="Card_Wallet" customModuleProvider="target">
+                                                <rect key="frame" x="15" y="59" width="270" height="1"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="1" id="Svc-1l-PM2"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="backgroundColorTypeAdapter">
+                                                        <integer key="value" value="3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="o5m-ug-6vC" firstAttribute="leading" secondItem="dan-i8-UFp" secondAttribute="leading" constant="15" id="4sj-Wq-199"/>
+                                            <constraint firstItem="o5m-ug-6vC" firstAttribute="top" secondItem="f3f-E7-m3b" secondAttribute="bottom" id="9bF-jC-usy"/>
+                                            <constraint firstAttribute="height" constant="60" id="G88-0T-rVt"/>
+                                            <constraint firstItem="Utk-pC-d0l" firstAttribute="leading" secondItem="o5m-ug-6vC" secondAttribute="leading" id="NrM-Cf-evc"/>
+                                            <constraint firstItem="f3f-E7-m3b" firstAttribute="top" secondItem="dan-i8-UFp" secondAttribute="top" id="QF4-cN-FQk"/>
+                                            <constraint firstAttribute="bottom" secondItem="o5m-ug-6vC" secondAttribute="bottom" id="VvY-4b-5YJ"/>
+                                            <constraint firstAttribute="trailing" secondItem="o5m-ug-6vC" secondAttribute="trailing" constant="15" id="fnQ-60-Kve"/>
+                                            <constraint firstItem="f3f-E7-m3b" firstAttribute="leading" secondItem="dan-i8-UFp" secondAttribute="leading" constant="15" id="iuM-Xk-KfO"/>
+                                            <constraint firstItem="Utk-pC-d0l" firstAttribute="trailing" secondItem="o5m-ug-6vC" secondAttribute="trailing" id="mPV-O2-Nx3"/>
+                                            <constraint firstAttribute="bottom" secondItem="Utk-pC-d0l" secondAttribute="bottom" id="mSd-eR-nVv"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eC5-m9-2wd">
+                                        <rect key="frame" x="0.0" y="80" width="300" height="60"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H2j-Sb-Inb" customClass="Label" customModule="Card_Wallet" customModuleProvider="target">
+                                                <rect key="frame" x="15" y="0.0" width="66" height="17.5"/>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                                        <integer key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="fontTypeAdapter" value="hr"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                        <real key="value" value="14"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4qQ-m9-pnr" customClass="TextField" customModule="Card_Wallet" customModuleProvider="target">
+                                                <rect key="frame" x="15" y="17.5" width="270" height="42.5"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" secureTextEntry="YES" textContentType="name"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                                        <integer key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="fontTypeAdapter" value="hr"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                        <real key="value" value="16"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Mee-Nu-fAW" customClass="ImageView" customModule="Card_Wallet" customModuleProvider="target">
+                                                <rect key="frame" x="15" y="59" width="270" height="1"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="1" id="lVv-vW-jA5"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="backgroundColorTypeAdapter">
+                                                        <integer key="value" value="3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="Mee-Nu-fAW" firstAttribute="leading" secondItem="4qQ-m9-pnr" secondAttribute="leading" id="Ah4-Yk-jFV"/>
+                                            <constraint firstAttribute="bottom" secondItem="Mee-Nu-fAW" secondAttribute="bottom" id="R4m-Fn-ILV"/>
+                                            <constraint firstItem="Mee-Nu-fAW" firstAttribute="trailing" secondItem="4qQ-m9-pnr" secondAttribute="trailing" id="SXZ-Dq-UPD"/>
+                                            <constraint firstItem="4qQ-m9-pnr" firstAttribute="leading" secondItem="eC5-m9-2wd" secondAttribute="leading" constant="15" id="bjQ-1b-3Hv"/>
+                                            <constraint firstItem="H2j-Sb-Inb" firstAttribute="leading" secondItem="eC5-m9-2wd" secondAttribute="leading" constant="15" id="g3e-VY-cqU"/>
+                                            <constraint firstAttribute="bottom" secondItem="4qQ-m9-pnr" secondAttribute="bottom" id="jaE-tl-JIt"/>
+                                            <constraint firstAttribute="height" constant="60" id="k2z-gd-WcX"/>
+                                            <constraint firstItem="H2j-Sb-Inb" firstAttribute="top" secondItem="eC5-m9-2wd" secondAttribute="top" id="vTx-9o-mJB"/>
+                                            <constraint firstAttribute="trailing" secondItem="4qQ-m9-pnr" secondAttribute="trailing" constant="15" id="xWu-88-nTh"/>
+                                            <constraint firstItem="4qQ-m9-pnr" firstAttribute="top" secondItem="H2j-Sb-Inb" secondAttribute="bottom" id="yWw-ze-dh2"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BVn-sZ-1oO" customClass="Button" customModule="Card_Wallet" customModuleProvider="target">
+                                        <rect key="frame" x="35" y="160" width="230" height="44"/>
+                                        <color key="backgroundColor" red="0.84313725490000002" green="0.2666666667" blue="0.22352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="230" id="Y8h-RC-lkx"/>
+                                            <constraint firstAttribute="height" constant="44" id="jby-NG-uZk"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="16"/>
+                                        <inset key="imageEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="SignIn"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="fontTypeAdapter" value="hb"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                <real key="value" value="16"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="clickToSignIn:" destination="PMB-xG-Cbx" eventType="touchUpInside" id="yWt-OS-LLw"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ePn-CX-brM" customClass="Button" customModule="Card_Wallet" customModuleProvider="target">
+                                        <rect key="frame" x="35" y="214" width="230" height="44"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="230" id="fho-LJ-3N6"/>
+                                            <constraint firstAttribute="height" constant="44" id="s86-iE-Q8M"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="16"/>
+                                        <inset key="imageEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Sign-up"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="fontTypeAdapter" value="hb"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                <real key="value" value="16"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="clickToSignup:" destination="PMB-xG-Cbx" eventType="touchUpInside" id="uKr-Td-gfi"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="eC5-m9-2wd" firstAttribute="leading" secondItem="S8Y-2q-qTn" secondAttribute="leading" id="2Do-Sm-ZCU"/>
+                                    <constraint firstItem="ePn-CX-brM" firstAttribute="top" secondItem="BVn-sZ-1oO" secondAttribute="bottom" constant="10" id="4P5-r3-Zwr"/>
+                                    <constraint firstItem="ePn-CX-brM" firstAttribute="centerX" secondItem="S8Y-2q-qTn" secondAttribute="centerX" id="KhH-2S-F4W"/>
+                                    <constraint firstAttribute="width" constant="300" id="Lre-sf-Dt5"/>
+                                    <constraint firstAttribute="trailing" secondItem="dan-i8-UFp" secondAttribute="trailing" id="LxM-T1-rto"/>
+                                    <constraint firstItem="dan-i8-UFp" firstAttribute="top" secondItem="S8Y-2q-qTn" secondAttribute="top" id="Rbs-pi-Ek0"/>
+                                    <constraint firstItem="BVn-sZ-1oO" firstAttribute="centerX" secondItem="S8Y-2q-qTn" secondAttribute="centerX" id="TYg-Jx-jl2"/>
+                                    <constraint firstAttribute="bottom" secondItem="ePn-CX-brM" secondAttribute="bottom" id="abV-Mh-ogc"/>
+                                    <constraint firstItem="eC5-m9-2wd" firstAttribute="top" secondItem="dan-i8-UFp" secondAttribute="bottom" constant="20" id="b9E-N0-S7n"/>
+                                    <constraint firstAttribute="trailing" secondItem="eC5-m9-2wd" secondAttribute="trailing" id="cX0-hv-ewh"/>
+                                    <constraint firstItem="dan-i8-UFp" firstAttribute="leading" secondItem="S8Y-2q-qTn" secondAttribute="leading" id="mkS-v8-udl"/>
+                                    <constraint firstItem="BVn-sZ-1oO" firstAttribute="top" secondItem="eC5-m9-2wd" secondAttribute="bottom" constant="20" id="nRH-LN-WzW"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.12941176470588234" green="0.13333333333333333" blue="0.23529411764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="S8Y-2q-qTn" firstAttribute="centerX" secondItem="zQT-Cm-17S" secondAttribute="centerX" id="7al-CH-lkq"/>
+                            <constraint firstItem="txY-D0-lGE" firstAttribute="centerX" secondItem="zQT-Cm-17S" secondAttribute="centerX" id="BHf-bw-fmQ"/>
+                            <constraint firstItem="S8Y-2q-qTn" firstAttribute="top" secondItem="txY-D0-lGE" secondAttribute="bottom" constant="30" id="cDd-TD-cBj"/>
+                            <constraint firstItem="S8Y-2q-qTn" firstAttribute="centerY" secondItem="zQT-Cm-17S" secondAttribute="centerY" constant="40" id="ewa-Vi-zGY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Meq-Cv-Vu1"/>
+                    </view>
+                    <connections>
+                        <outlet property="emailTxt" destination="o5m-ug-6vC" id="Hip-ui-b83"/>
+                        <outlet property="passwordTxt" destination="4qQ-m9-pnr" id="MFr-re-ZAJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YZX-P6-FMJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1772" y="31"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ovi-Ta-ytX">
+            <objects>
+                <navigationController storyboardIdentifier="DashboardVCNavigation" automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="qLQ-fy-4F0" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="l6w-IW-SDx">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="XH4-i9-ocB" kind="relationship" relationship="rootViewController" id="Heb-E8-K9c"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kpg-jq-FZg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2456" y="747"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="2hi-k1-x2W">
+            <objects>
+                <viewController id="hHx-ox-ona" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dKg-WI-zzJ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Jz-59-yuH">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ufV-mc-mo6">
+                                        <rect key="frame" x="0.0" y="30" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="5M4-ps-fpn"/>
+                                            <constraint firstAttribute="height" constant="50" id="Pyi-Tm-6jm"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" image="back"/>
+                                        <connections>
+                                            <action selector="clickToSideMenu:" destination="hHx-ox-ona" eventType="touchUpInside" id="4Y1-Dn-EY7"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notification" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nod-21-nUq" customClass="Label" customModule="Card_Wallet" customModuleProvider="target">
+                                        <rect key="frame" x="60" y="42.5" width="121" height="25.5"/>
+                                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="22"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="fontTypeAdapter" value="hb"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                <real key="value" value="22"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="ufV-mc-mo6" secondAttribute="bottom" id="8yr-hk-XPe"/>
+                                    <constraint firstItem="Nod-21-nUq" firstAttribute="leading" secondItem="6Jz-59-yuH" secondAttribute="leading" constant="60" id="EHS-vP-OPZ"/>
+                                    <constraint firstItem="ufV-mc-mo6" firstAttribute="leading" secondItem="6Jz-59-yuH" secondAttribute="leading" id="Edb-z4-wLY"/>
+                                    <constraint firstAttribute="bottom" secondItem="Nod-21-nUq" secondAttribute="bottom" constant="12" id="QBb-qH-vmc"/>
+                                    <constraint firstAttribute="height" constant="80" id="cDC-ca-tAb"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zcr-54-igr">
+                                <rect key="frame" x="0.0" y="80" width="320" height="478"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="hHx-ox-ona" id="4BK-Za-sr9"/>
+                                    <outlet property="delegate" destination="hHx-ox-ona" id="UAX-op-U3n"/>
+                                </connections>
+                            </tableView>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You have no any notification yet." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AZA-iw-Psj" customClass="Label" customModule="Card_Wallet" customModuleProvider="target">
+                                <rect key="frame" x="30" y="310" width="260" height="18.5"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="fontTypeAdapter" value="hr"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                        <real key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.12941176469999999" green="0.1333333333" blue="0.23529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="zcr-54-igr" firstAttribute="leading" secondItem="nE7-CO-4jR" secondAttribute="leading" id="8RH-iy-ct3"/>
+                            <constraint firstItem="nE7-CO-4jR" firstAttribute="trailing" secondItem="zcr-54-igr" secondAttribute="trailing" id="Llr-Cj-jgH"/>
+                            <constraint firstItem="zcr-54-igr" firstAttribute="top" secondItem="6Jz-59-yuH" secondAttribute="bottom" id="Oj2-Nt-dBO"/>
+                            <constraint firstItem="nE7-CO-4jR" firstAttribute="bottom" secondItem="zcr-54-igr" secondAttribute="bottom" constant="10" id="PTR-xw-eK5"/>
+                            <constraint firstItem="AZA-iw-Psj" firstAttribute="leading" secondItem="nE7-CO-4jR" secondAttribute="leading" constant="30" id="QAO-Rh-LGX"/>
+                            <constraint firstItem="6Jz-59-yuH" firstAttribute="top" secondItem="dKg-WI-zzJ" secondAttribute="top" id="X4V-qt-cZy"/>
+                            <constraint firstItem="6Jz-59-yuH" firstAttribute="leading" secondItem="nE7-CO-4jR" secondAttribute="leading" id="oQh-yd-0Bo"/>
+                            <constraint firstItem="AZA-iw-Psj" firstAttribute="centerY" secondItem="zcr-54-igr" secondAttribute="centerY" id="oj3-6V-PNE"/>
+                            <constraint firstItem="nE7-CO-4jR" firstAttribute="trailing" secondItem="AZA-iw-Psj" secondAttribute="trailing" constant="30" id="p4H-Ad-Gy1"/>
+                            <constraint firstItem="nE7-CO-4jR" firstAttribute="trailing" secondItem="6Jz-59-yuH" secondAttribute="trailing" id="u4F-io-Rr8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="nE7-CO-4jR"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="uSc-rY-WWI"/>
+                    <connections>
+                        <outlet property="noDataFoundLbl" destination="AZA-iw-Psj" id="7Tb-cC-21f"/>
+                        <outlet property="tblView" destination="zcr-54-igr" id="eRq-FS-JwX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gl3-r6-VkG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3844" y="747"/>
+        </scene>
+        <!--Sign UpVC-->
+        <scene sceneID="xht-VV-V9A">
+            <objects>
+                <viewController storyboardIdentifier="SignUpVC" id="j0y-bo-oIF" customClass="SignUpVC" customModule="Card_Wallet" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RvM-Yo-2X3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SIGN-UP" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TJb-HR-3Jk" customClass="Label" customModule="Card_Wallet" customModuleProvider="target">
+                                <rect key="frame" x="108" y="40" width="104.5" height="29"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="fontTypeAdapter" value="hb"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AXH-ho-8ww">
+                                <rect key="frame" x="10" y="99" width="300" height="450"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pzC-Th-R9D" customClass="Button" customModule="Card_Wallet" customModuleProvider="target">
+                                        <rect key="frame" x="110" y="0.0" width="80" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="6uO-q4-Jq8"/>
+                                            <constraint firstAttribute="width" constant="80" id="LeY-Bp-EKd"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="user_placeholder"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="40"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="clickToProfilePicBtn:" destination="j0y-bo-oIF" eventType="touchUpInside" id="fC4-Zh-2bO"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W4m-OW-prh">
+                                        <rect key="frame" x="0.0" y="100" width="300" height="60"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Ce-jq-2N7" customClass="Label" customModule="Card_Wallet" customModuleProvider="target">
+                                                <rect key="frame" x="15" y="0.0" width="40.5" height="17.5"/>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                                        <integer key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="fontTypeAdapter" value="hr"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                        <real key="value" value="14"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lhc-lE-GNF" customClass="TextField" customModule="Card_Wallet" customModuleProvider="target">
+                                                <rect key="frame" x="15" y="17.5" width="270" height="42.5"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" textContentType="name"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                                        <integer key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="fontTypeAdapter" value="hr"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                        <real key="value" value="16"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dIE-ns-ubd" customClass="ImageView" customModule="Card_Wallet" customModuleProvider="target">
+                                                <rect key="frame" x="15" y="59" width="270" height="1"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="1" id="zWW-HN-uId"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="backgroundColorTypeAdapter">
+                                                        <integer key="value" value="3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="1Sz-Fw-ywx"/>
+                                            <constraint firstAttribute="trailing" secondItem="lhc-lE-GNF" secondAttribute="trailing" constant="15" id="34d-ZE-YV6"/>
+                                            <constraint firstItem="lhc-lE-GNF" firstAttribute="top" secondItem="7Ce-jq-2N7" secondAttribute="bottom" id="7gz-7c-CNl"/>
+                                            <constraint firstItem="dIE-ns-ubd" firstAttribute="leading" secondItem="lhc-lE-GNF" secondAttribute="leading" id="Hfd-Mk-EHl"/>
+                                            <constraint firstAttribute="bottom" secondItem="dIE-ns-ubd" secondAttribute="bottom" id="J8t-pC-yys"/>
+                                            <constraint firstItem="7Ce-jq-2N7" firstAttribute="top" secondItem="W4m-OW-prh" secondAttribute="top" id="Oyu-mO-plu"/>
+                                            <constraint firstAttribute="bottom" secondItem="lhc-lE-GNF" secondAttribute="bottom" id="XZj-gC-wv0"/>
+                                            <constraint firstItem="7Ce-jq-2N7" firstAttribute="leading" secondItem="W4m-OW-prh" secondAttribute="leading" constant="15" id="Xq3-A8-T3n"/>
+                                            <constraint firstItem="lhc-lE-GNF" firstAttribute="leading" secondItem="W4m-OW-prh" secondAttribute="leading" constant="15" id="dh8-rf-X2n"/>
+                                            <constraint firstItem="dIE-ns-ubd" firstAttribute="trailing" secondItem="lhc-lE-GNF" secondAttribute="trailing" id="mjl-Yx-kaF"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H6L-5w-chq">
+                                        <rect key="frame" x="0.0" y="180" width="300" height="60"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1R6-YJ-IqM" customClass="Label" customModule="Card_Wallet" customModuleProvider="target">
+                                                <rect key="frame" x="15" y="0.0" width="38" height="17.5"/>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                                        <integer key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="fontTypeAdapter" value="hr"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                        <real key="value" value="14"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6IS-wL-btr" customClass="TextField" customModule="Card_Wallet" customModuleProvider="target">
+                                                <rect key="frame" x="15" y="17.5" width="270" height="42.5"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" returnKeyType="next" textContentType="name"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                                        <integer key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="fontTypeAdapter" value="hr"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                        <real key="value" value="16"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kZ7-03-1YD" customClass="ImageView" customModule="Card_Wallet" customModuleProvider="target">
+                                                <rect key="frame" x="15" y="59" width="270" height="1"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="1" id="Bq3-qV-QB6"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="backgroundColorTypeAdapter">
+                                                        <integer key="value" value="3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="1R6-YJ-IqM" firstAttribute="leading" secondItem="H6L-5w-chq" secondAttribute="leading" constant="15" id="7Uf-gj-Lc7"/>
+                                            <constraint firstAttribute="trailing" secondItem="6IS-wL-btr" secondAttribute="trailing" constant="15" id="80T-VD-CUP"/>
+                                            <constraint firstAttribute="height" constant="60" id="IOT-Tf-CId"/>
+                                            <constraint firstItem="kZ7-03-1YD" firstAttribute="trailing" secondItem="6IS-wL-btr" secondAttribute="trailing" id="Nqv-nB-fLr"/>
+                                            <constraint firstItem="kZ7-03-1YD" firstAttribute="leading" secondItem="6IS-wL-btr" secondAttribute="leading" id="O4D-KW-BIy"/>
+                                            <constraint firstItem="6IS-wL-btr" firstAttribute="leading" secondItem="H6L-5w-chq" secondAttribute="leading" constant="15" id="V9g-dk-2SU"/>
+                                            <constraint firstItem="6IS-wL-btr" firstAttribute="top" secondItem="1R6-YJ-IqM" secondAttribute="bottom" id="Zma-Vj-d8q"/>
+                                            <constraint firstAttribute="bottom" secondItem="6IS-wL-btr" secondAttribute="bottom" id="iKV-IL-oC2"/>
+                                            <constraint firstItem="1R6-YJ-IqM" firstAttribute="top" secondItem="H6L-5w-chq" secondAttribute="top" id="wP4-0P-tao"/>
+                                            <constraint firstAttribute="bottom" secondItem="kZ7-03-1YD" secondAttribute="bottom" id="zNh-nV-YTS"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iWd-le-5kL">
+                                        <rect key="frame" x="0.0" y="260" width="300" height="60"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5fh-Pv-FDB" customClass="Label" customModule="Card_Wallet" customModuleProvider="target">
+                                                <rect key="frame" x="15" y="0.0" width="66" height="17.5"/>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                                        <integer key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="fontTypeAdapter" value="hr"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                        <real key="value" value="14"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kVS-rE-kMV" customClass="TextField" customModule="Card_Wallet" customModuleProvider="target">
+                                                <rect key="frame" x="15" y="17.5" width="270" height="42.5"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" secureTextEntry="YES" textContentType="name"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                                        <integer key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="fontTypeAdapter" value="hr"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                        <real key="value" value="16"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sRP-6C-Tl7" customClass="ImageView" customModule="Card_Wallet" customModuleProvider="target">
+                                                <rect key="frame" x="15" y="59" width="270" height="1"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="1" id="psU-9q-4EK"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="backgroundColorTypeAdapter">
+                                                        <integer key="value" value="3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="34B-im-n9u"/>
+                                            <constraint firstItem="5fh-Pv-FDB" firstAttribute="leading" secondItem="iWd-le-5kL" secondAttribute="leading" constant="15" id="F4M-gr-2Mm"/>
+                                            <constraint firstAttribute="bottom" secondItem="sRP-6C-Tl7" secondAttribute="bottom" id="JeJ-O6-FeX"/>
+                                            <constraint firstItem="sRP-6C-Tl7" firstAttribute="leading" secondItem="kVS-rE-kMV" secondAttribute="leading" id="e7G-yt-fVd"/>
+                                            <constraint firstItem="kVS-rE-kMV" firstAttribute="leading" secondItem="iWd-le-5kL" secondAttribute="leading" constant="15" id="fEp-AO-PM3"/>
+                                            <constraint firstItem="kVS-rE-kMV" firstAttribute="top" secondItem="5fh-Pv-FDB" secondAttribute="bottom" id="i4O-Nz-xsr"/>
+                                            <constraint firstItem="5fh-Pv-FDB" firstAttribute="top" secondItem="iWd-le-5kL" secondAttribute="top" id="kg4-Az-rTx"/>
+                                            <constraint firstItem="sRP-6C-Tl7" firstAttribute="trailing" secondItem="kVS-rE-kMV" secondAttribute="trailing" id="lRZ-b7-LmR"/>
+                                            <constraint firstAttribute="bottom" secondItem="kVS-rE-kMV" secondAttribute="bottom" id="nOJ-jV-Yuz"/>
+                                            <constraint firstAttribute="trailing" secondItem="kVS-rE-kMV" secondAttribute="trailing" constant="15" id="xlg-f4-V03"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pz0-Lh-nZL" customClass="Button" customModule="Card_Wallet" customModuleProvider="target">
+                                        <rect key="frame" x="35" y="340" width="230" height="44"/>
+                                        <color key="backgroundColor" red="0.84313725490000002" green="0.2666666667" blue="0.22352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="42L-4v-QYk"/>
+                                            <constraint firstAttribute="width" constant="230" id="V4U-az-ypg"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="16"/>
+                                        <inset key="imageEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="SignUp"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="fontTypeAdapter" value="hb"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                <real key="value" value="16"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="clickToSignup:" destination="j0y-bo-oIF" eventType="touchUpInside" id="1ru-Wo-Skf"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IwK-r2-fH9" customClass="Button" customModule="Card_Wallet" customModuleProvider="target">
+                                        <rect key="frame" x="35" y="394" width="230" height="44"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="230" id="Vau-hK-aG4"/>
+                                            <constraint firstAttribute="height" constant="44" id="zlg-X8-FXS"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="16"/>
+                                        <inset key="imageEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Sign-in"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="textColorTypeAdapter">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="fontTypeAdapter" value="hb"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                <real key="value" value="16"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="clickToSignIn:" destination="j0y-bo-oIF" eventType="touchUpInside" id="Wys-mW-qrP"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="IwK-r2-fH9" firstAttribute="top" secondItem="pz0-Lh-nZL" secondAttribute="bottom" constant="10" id="20T-jA-xnN"/>
+                                    <constraint firstItem="pzC-Th-R9D" firstAttribute="top" secondItem="AXH-ho-8ww" secondAttribute="top" id="5pe-i8-6MJ"/>
+                                    <constraint firstItem="iWd-le-5kL" firstAttribute="leading" secondItem="AXH-ho-8ww" secondAttribute="leading" id="8GH-fW-V5g"/>
+                                    <constraint firstAttribute="trailing" secondItem="H6L-5w-chq" secondAttribute="trailing" id="FPs-bx-dBt"/>
+                                    <constraint firstAttribute="trailing" secondItem="W4m-OW-prh" secondAttribute="trailing" id="GQW-c5-9dn"/>
+                                    <constraint firstAttribute="height" constant="450" id="GSA-4b-X6o"/>
+                                    <constraint firstItem="IwK-r2-fH9" firstAttribute="centerX" secondItem="AXH-ho-8ww" secondAttribute="centerX" id="Hb9-oW-6In"/>
+                                    <constraint firstAttribute="width" constant="300" id="OAU-6I-Qkb"/>
+                                    <constraint firstItem="H6L-5w-chq" firstAttribute="leading" secondItem="AXH-ho-8ww" secondAttribute="leading" id="PBf-Po-sAu"/>
+                                    <constraint firstItem="pzC-Th-R9D" firstAttribute="centerX" secondItem="AXH-ho-8ww" secondAttribute="centerX" id="bnT-8C-HfP"/>
+                                    <constraint firstItem="iWd-le-5kL" firstAttribute="top" secondItem="H6L-5w-chq" secondAttribute="bottom" constant="20" id="cvB-fm-X0Y"/>
+                                    <constraint firstAttribute="trailing" secondItem="iWd-le-5kL" secondAttribute="trailing" id="fjU-wE-D2W"/>
+                                    <constraint firstItem="W4m-OW-prh" firstAttribute="leading" secondItem="AXH-ho-8ww" secondAttribute="leading" id="jxf-jc-k31"/>
+                                    <constraint firstItem="pz0-Lh-nZL" firstAttribute="top" secondItem="iWd-le-5kL" secondAttribute="bottom" constant="20" id="rtB-w2-jxS"/>
+                                    <constraint firstItem="pz0-Lh-nZL" firstAttribute="centerX" secondItem="AXH-ho-8ww" secondAttribute="centerX" id="uLc-iv-EAd"/>
+                                    <constraint firstItem="H6L-5w-chq" firstAttribute="top" secondItem="W4m-OW-prh" secondAttribute="bottom" constant="20" id="vWV-xO-6xB"/>
+                                    <constraint firstItem="W4m-OW-prh" firstAttribute="top" secondItem="pzC-Th-R9D" secondAttribute="bottom" constant="20" id="yi5-rh-VxL"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.12941176469999999" green="0.1333333333" blue="0.23529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="AXH-ho-8ww" firstAttribute="centerY" secondItem="RvM-Yo-2X3" secondAttribute="centerY" constant="40" id="0Er-zt-x3P"/>
+                            <constraint firstItem="AXH-ho-8ww" firstAttribute="top" secondItem="TJb-HR-3Jk" secondAttribute="bottom" constant="30" id="c9j-xv-y1Y"/>
+                            <constraint firstItem="AXH-ho-8ww" firstAttribute="centerX" secondItem="RvM-Yo-2X3" secondAttribute="centerX" id="en7-QP-G3a"/>
+                            <constraint firstItem="TJb-HR-3Jk" firstAttribute="centerX" secondItem="RvM-Yo-2X3" secondAttribute="centerX" id="rJB-B3-63G"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="vhm-gU-wAz"/>
+                    </view>
+                    <connections>
+                        <outlet property="emailTxt" destination="6IS-wL-btr" id="9sI-lu-dYo"/>
+                        <outlet property="nameTxt" destination="lhc-lE-GNF" id="IrT-qO-4Lb"/>
+                        <outlet property="passwordTxt" destination="kVS-rE-kMV" id="UOJ-WK-AAm"/>
+                        <outlet property="profilePicBtn" destination="pzC-Th-R9D" id="Hza-5z-GZ7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KWb-Vf-W2z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2438" y="31"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="app_logo" width="512" height="512"/>
+        <image name="back" width="20" height="20"/>
+        <image name="filter" width="25" height="25"/>
+        <image name="menu" width="20" height="20"/>
+        <image name="user_placeholder" width="80" height="80"/>
+    </resources>
+</document>
